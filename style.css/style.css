@@ -1,0 +1,88 @@
+:root {
+  --backgroundColor: #1F1D36; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  /* color-scheme: dark; */
+  background-color: var(--backgroundColor);
+  font-size: 62.5%;
+  font-family: Helvetica; }
+
+body {
+  position: relative; }
+  body .header {
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #064663; }
+    body .header .header__list {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      font-size: 3rem; }
+      body .header .header__list li {
+        margin: 10px 30px; }
+        body .header .header__list li a {
+          color: white;
+          text-decoration: none; }
+  body .main .home {
+    display: flex;
+    position: relative;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center; }
+    body .main .home h1 {
+      font-size: 9rem;
+      background: linear-gradient(90deg, #064663 6%, #3c396c 31%, #4e346f 72%, #5f3072 95%, #712b75 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    body .main .home p {
+      font-size: 5rem;
+      color: white; }
+    body .main .home .contact {
+      display: flex;
+      gap: 20px; }
+    body .main .home .arrow {
+      position: absolute;
+      bottom: 20px;
+      cursor: pointer; }
+  body .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; }
+    body .about h1 {
+      font-size: 8rem;
+      color: white; }
+    body .about__container {
+      display: flex;
+      width: 90vw;
+      justify-content: space-between;
+      align-items: center; }
+      body .about__container .img-profile {
+        margin: 0 auto; }
+        body .about__container .img-profile img {
+          border-radius: 20px;
+          width: 300px;
+          height: 400px;
+          object-fit: cover; }
+      body .about__container .text-area {
+        color: white;
+        font-size: 3rem;
+        width: 600px;
+        line-height: 1.5; }
+        body .about__container .text-area .skills-area {
+          margin-top: 40px; }
+        body .about__container .text-area .skills-area__images {
+          display: flex;
+          gap: 20px; }

@@ -1,11 +1,8 @@
-import { skillsImg } from "./skills.js";
+import { contactContainer, fragment } from './contact.js'
+const contact = document.querySelector('#contact')
 
-const div = document.querySelector('#skills-area__images')
 
-div.appendChild(skillsImg('https://img.icons8.com/color/48/000000/html-5--v1.png', 'HTML'))
-div.appendChild(skillsImg('https://img.icons8.com/color/48/000000/css3.png', 'CSS'))
-div.appendChild(skillsImg('https://img.icons8.com/color/48/000000/javascript--v1.png', 'JS'))
-div.appendChild(skillsImg('https://img.icons8.com/ios-filled/50/000000/github.png', 'GITHUB'))
-div.appendChild(skillsImg('https://img.icons8.com/color/48/000000/react-native.png', 'REACT'))
-div.appendChild(skillsImg('https://img.icons8.com/color/48/000000/sass.png', 'SASS'))
-div.appendChild(skillsImg('https://img.icons8.com/color/48/000000/pug.png', 'PUG'))
+contactContainer('https://www.linkedin.com/in/carlos-massarino-9970b1234/', '../public/assets/icons/linkedin.png');
+contactContainer('https://twitter.com/C_Massarino', '../public/assets/icons/twitter.png');
+contactContainer('https://github.com/5pamm3r', '../public/assets/icons/github.png');
+contact.append(fragment)

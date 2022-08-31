@@ -1,5 +1,6 @@
 :root {
   --backgroundColor: #1f1d36;
+
 }
 * {
   box-sizing: border-box;
@@ -7,9 +8,9 @@
   padding: 0;
 }
 html {
-  background-color: var(--backgroundColor);
+  background-color: white;
   font-size: 62.5%;
-  font-family: Helvetica;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   position: relative;
@@ -18,33 +19,30 @@ body {
     position: absolute;
     justify-content: end;
     width: 100%;
-    padding: 20px;
+    padding: 20px 0;
     border-bottom: 1px solid #064663;
     z-index: 1;
     .header__list {
       display: flex;
       list-style: none;
       justify-content: space-around;
-      font-size: 2.5rem;
-      .link--right:hover {
-        border-bottom: 1px solid white;
-        rotate: 10deg;
+      font-size: 2rem;
+      .header__links {
+        border: 1px solid transparent;
       }
-      .link--left:hover {
-        border-bottom: 1px solid white;
-        rotate: -10deg;
+      .header__links:hover {
+        border-bottom: 1px solid black;
       }
       li {
-        margin: 10px 30px;
+        margin: 0 30px;
         a {
-          color: white;
+          color: black;
           text-decoration: none;
         }
       }
     }
   }
   .main {
-    // probar con grid
     .home {
       display: flex;
       position: relative;
@@ -52,41 +50,75 @@ body {
       flex-direction: column;
       justify-content: center;
       height: 100vh;
+      margin-left: 30px;
       .profile__container {
-        // display: flex;
-        // justify-content: space-between;
-        margin-left: 20px;
+        .available-for-work {
+          position: absolute;
+          right: 10vw;
+          top: 20vh;
+          animation: rotation 25s infinite linear;
+        }
       }
-      span {
+      .title {
         font-size: 8rem;
-        color: white;
+        color: transparent;
+        font-weight: bold;
+        // -webkit-text-stroke: 1.5px #929192;
+        -webkit-text-stroke: 1.5px black;
       }
-      p {
-        font-size: 5rem;
-        color: white;
+      .subtitle {
+        font-size: 3.5rem;
+        color: black;
+        margin-bottom: 20px;
+      }
+      .home__info {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .text-red {
+        color: red;
+      }
+      .availability {
+        font-size: 2.5rem;
       }
       .contact {
         display: flex;
         gap: 20px;
+        margin-top: 10px;
+        .imageContact__container {
+          width: 30px;
+          img {
+            width: 100%;
+          }
+        }
       }
       .arrow {
         position: absolute;
         bottom: 10vh;
-        left: 10vw;
+        left: 45vw;
         animation: arrow 1s ease-in-out infinite;
+        width: 50px;
         cursor: pointer;
       }
     }
   }
   .about {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     height: 100vh;
     gap: 40px;
-    h1 {
+    margin: 0 30px;
+    position: relative;
+    .about__title {
       font-size: 8rem;
-      color: white;
+      -webkit-text-stroke: 1.5px #929192;
+      color: transparent;
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .second-title {
+      margin-left: 100px;
     }
     &__container {
       display: flex;
@@ -94,8 +126,12 @@ body {
       justify-content: space-between;
       align-items: center;
       .img-profile {
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        z-index: -1;
         margin: 0 auto;
-        width: 300px;
+        width: 600px;
         img {
           border-radius: 20px;
           width: 100%;
@@ -103,10 +139,10 @@ body {
         }
       }
       .text-area {
-        color: white;
         font-size: 3rem;
         width: 600px;
         line-height: 1.5;
+        margin-left: 100px;
         .skills-area {
           margin-top: 40px;
         }
@@ -129,4 +165,12 @@ body {
   100% {
   transform: translate(0px, 50px);
   }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(359deg);
+  }
+}

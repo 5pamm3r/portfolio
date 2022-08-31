@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css/style.css" />
     <title>Portfolio</title>
   </head>
@@ -11,10 +17,9 @@
     <header class="header">
       <nav>
         <ul class="header__list">
-          <li class="link--right"><a href="#">Home</a></li>
-          <li class="link--left"><a href="#about">About</a></li>
-          <li class="link--right"><a href="#">Projects</a></li>
-          <li class="link--left"><a href="#">Contact</a></li>
+          <li class="header__links"><a href="#about">About</a></li>
+          <li class="header__links"><a href="#">Projects</a></li>
+          <li class="header__links"><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -22,10 +27,18 @@
       <section class="home" id="home">
         <div class="profile__container">
           <div class="home__description">
-            <span>Carlos Massarino</span>
-            <p>Frontend Developer</p>
-            <div class="contact" id="contact">
-            </div>
+            <p class="title">Carlos Massarino</p>
+            <!-- <p class="subtitle">Frontend Developer</p> -->
+            <p class="home__info">
+              I Craft High-Performing <br /><span class="text-red">+</span>
+              Beautiful Websites
+            </p>
+            <p class="availability">Get in touch for availability.</p>
+            <img
+              src="./public/assets/images/available-for-work.svg"
+              class="available-for-work"
+            />
+            <div class="contact" id="contact"></div>
           </div>
         </div>
         <a href="#about">
@@ -38,11 +51,8 @@
       </section>
 
       <section class="about" id="about">
-        <h1>About Me</h1>
+        <p class="about__title">ABOUT ME</p>
         <div class="about__container">
-          <div class="img-profile">
-            <img src="./public/assets/images/profile.png" alt="profile" />
-          </div>
           <div class="text-area">
             <p>
               I am currently dedicated to the development of web applications,
@@ -57,22 +67,42 @@
               <skills-list></skills-list>
             </div>
           </div>
+          <div class="img-profile">
+            <img src="./public/assets/images/profile-grey.png" alt="profile" />
+          </div>
         </div>
       </section>
 
-      <section class="projects">
-        <p></p>
-      </section>
+      <section id="projects" class="projects"></section>
     </main>
 
     <template id="templateContact">
-      <div>
+      <div class="imageContact__container">
         <a target="_blank" rel="noopener noreferrer" id="contactLink">
-          <img id="contactImg"/>
+          <img id="contactImg" />
         </a>
       </div>
     </template>
 
+    <template id="templateProjects">
+      <div class="project__container">
+        <div class="projectDescription__container">
+          <h2 class="project-tag">PROJECT</h2>
+          <div class="projectInfo__container">
+            <h2 id="projectTitle" class="project__title"></h2>
+            <h2 id="projectSubtitle" class="project__subtitle"></h2>
+          </div>
+          <p id="projectDescription" class="project__description"></p>
+          <div>
+            <span>EXPLORE <img /></span>
+          </div>
+        </div>
+        <div class="video__container">
+          <img id="projectImg" />
+          <video id="projectVideo"></video>
+        </div>
+      </div>
+    </template>
     <script src="src/index.js" type="module"></script>
     <script src="src/skillsList.js" type="module"></script>
   </body>

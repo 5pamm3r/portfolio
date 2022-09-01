@@ -1,6 +1,5 @@
 :root {
   --backgroundColor: #1f1d36;
-
 }
 * {
   box-sizing: border-box;
@@ -10,17 +9,17 @@
 html {
   background-color: white;
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body {
   position: relative;
   .header {
     display: flex;
     position: absolute;
-    justify-content: end;
+    justify-content: center;
     width: 100%;
     padding: 20px 0;
-    border-bottom: 1px solid #064663;
+    // border-bottom: 1px solid #064663;
     z-index: 1;
     .header__list {
       display: flex;
@@ -57,6 +56,19 @@ body {
           right: 10vw;
           top: 20vh;
           animation: rotation 25s infinite linear;
+        }
+        .skills__container {
+          position: absolute;
+          top: 240px;
+          left: 550px;
+          display: flex;
+          align-items: center;
+        }
+        .skills__text {
+          display: flex;
+          flex-direction: column;
+          font-size: 2rem;
+          font-weight: bold;
         }
       }
       .title {
@@ -109,11 +121,21 @@ body {
     gap: 40px;
     margin: 0 30px;
     position: relative;
+    .first-line {
+      border-bottom: 3px solid black;
+      width: 80px;
+    }
+    .second-line {
+      border-bottom: 3px solid black;
+      margin-top: 5px;
+      margin-left: 40px;
+      width: 80px;
+    }
     .about__title {
       font-size: 8rem;
-      -webkit-text-stroke: 1.5px #929192;
+      -webkit-text-stroke: 1.5px black;
       color: transparent;
-      text-align: center;
+      // text-align: center;
       margin-top: 20px;
       font-weight: bold;
     }
@@ -121,10 +143,10 @@ body {
       margin-left: 100px;
     }
     &__container {
-      display: flex;
-      width: 90vw;
-      justify-content: space-between;
-      align-items: center;
+      // display: flex;
+      // width: 90vw;
+      // justify-content: space-between;
+      // align-items: center;
       .img-profile {
         position: absolute;
         right: 0;
@@ -139,17 +161,23 @@ body {
         }
       }
       .text-area {
-        font-size: 3rem;
+        font-size: 2.5rem;
         width: 600px;
         line-height: 1.5;
         margin-left: 100px;
-        .skills-area {
-          margin-top: 40px;
+        margin-top: 50px;
+        p {
+          margin: 10px 0;
         }
-        .skills-area__images {
-          display: flex;
-          gap: 20px;
-        }
+      }
+      .skills-area {
+        margin-top: 40px;
+        font-size: 2.5rem;
+        margin-left: 100px;
+      }
+      .skills-area__images {
+        display: flex;
+        gap: 20px;
       }
     }
   }
@@ -157,13 +185,13 @@ body {
 
 @keyframes arrow {
   0% {
-  transform: translate(0px, 50px);
+    transform: translate(0px, 50px);
   }
   50% {
-  transform: translate(0px, 60px);
+    transform: translate(0px, 60px);
   }
   100% {
-  transform: translate(0px, 50px);
+    transform: translate(0px, 50px);
   }
 }
 @keyframes rotation {

@@ -9,17 +9,16 @@
 html {
   background-color: white;
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 body {
   position: relative; }
   body .header {
     display: flex;
     position: absolute;
-    justify-content: end;
+    justify-content: center;
     width: 100%;
     padding: 20px 0;
-    border-bottom: 1px solid #064663;
     z-index: 1; }
     body .header .header__list {
       display: flex;
@@ -48,6 +47,17 @@ body {
       right: 10vw;
       top: 20vh;
       animation: rotation 25s infinite linear; }
+    body .main .home .profile__container .skills__container {
+      position: absolute;
+      top: 240px;
+      left: 550px;
+      display: flex;
+      align-items: center; }
+    body .main .home .profile__container .skills__text {
+      display: flex;
+      flex-direction: column;
+      font-size: 2rem;
+      font-weight: bold; }
     body .main .home .title {
       font-size: 8rem;
       color: transparent;
@@ -86,41 +96,48 @@ body {
     gap: 40px;
     margin: 0 30px;
     position: relative; }
+    body .about .first-line {
+      border-bottom: 3px solid black;
+      width: 80px; }
+    body .about .second-line {
+      border-bottom: 3px solid black;
+      margin-top: 5px;
+      margin-left: 40px;
+      width: 80px; }
     body .about .about__title {
       font-size: 8rem;
-      -webkit-text-stroke: 1.5px #929192;
+      -webkit-text-stroke: 1.5px black;
       color: transparent;
-      text-align: center;
       margin-top: 20px;
       font-weight: bold; }
     body .about .second-title {
       margin-left: 100px; }
-    body .about__container {
+    body .about__container .img-profile {
+      position: absolute;
+      right: 0;
+      top: 10vh;
+      z-index: -1;
+      margin: 0 auto;
+      width: 600px; }
+      body .about__container .img-profile img {
+        border-radius: 20px;
+        width: 100%;
+        object-fit: cover; }
+    body .about__container .text-area {
+      font-size: 2.5rem;
+      width: 600px;
+      line-height: 1.5;
+      margin-left: 100px;
+      margin-top: 50px; }
+      body .about__container .text-area p {
+        margin: 10px 0; }
+    body .about__container .skills-area {
+      margin-top: 40px;
+      font-size: 2.5rem;
+      margin-left: 100px; }
+    body .about__container .skills-area__images {
       display: flex;
-      width: 90vw;
-      justify-content: space-between;
-      align-items: center; }
-      body .about__container .img-profile {
-        position: absolute;
-        right: 0;
-        top: 10vh;
-        z-index: -1;
-        margin: 0 auto;
-        width: 600px; }
-        body .about__container .img-profile img {
-          border-radius: 20px;
-          width: 100%;
-          object-fit: cover; }
-      body .about__container .text-area {
-        font-size: 3rem;
-        width: 600px;
-        line-height: 1.5;
-        margin-left: 100px; }
-        body .about__container .text-area .skills-area {
-          margin-top: 40px; }
-        body .about__container .text-area .skills-area__images {
-          display: flex;
-          gap: 20px; }
+      gap: 20px; }
 
 @keyframes arrow {
   0% {

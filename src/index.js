@@ -20,5 +20,68 @@ const getContact = (() => {
 
 const getProject = (() => {
   const project = document.querySelector('#projects');
+  projects(
+    'Expense tracker',
+    'React, UX/UI Design',
+    'A simplified yet beautiful shopping experience',
+    'with an innovative approach to e-commerce',
+    'in the digital space.',
+  )
+  projects(
+    'Umbrella',
+    'JavaScript, UX/UI Design',
+    'A simplified yet beautiful shopping experience',
+    'with an innovative approach to e-commerce',
+    'in the digital space.',
+  )
+  projects(
+    'Wish List',
+    'React, UX/UI Design',
+    'A simplified yet beautiful shopping experience',
+    'with an innovative approach to e-commerce',
+    'in the digital space.',
+  )
   project.append(fragmentProject)
 })();
+
+//hacer una func.
+document.getElementById('faq-item1').addEventListener('click',e=>{
+  const container = document.getElementById('faqHidden-item1')
+  if(container.classList.contains('faq-hidden')){
+    container.classList.remove('faq-hidden')
+    container.classList.add('faq-visible')
+    document.getElementById('faqIcon1').classList.add('active')
+  } else {
+    container.classList.remove('faq-visible')
+    container.classList.add('faq-hidden')
+    document.getElementById('faqIcon1').classList.remove('active')
+
+  }
+})
+document.getElementById('faq-item2').addEventListener('click',e=>{
+  const container = document.getElementById('faqHidden-item2')
+  if(container.classList.contains('faq-hidden')){
+    container.classList.remove('faq-hidden')
+    container.classList.add('faq-visible')
+    document.getElementById('faqIcon2').classList.add('active')
+
+  } else {
+    container.classList.remove('faq-visible')
+    container.classList.add('faq-hidden')
+    document.getElementById('faqIcon2').classList.remove('active')
+
+  }})
+document.getElementById('faq-item3').addEventListener('click',e=>{
+  const container = document.getElementById('faqHidden-item3')
+  if(container.classList.contains('faq-hidden')){
+    container.classList.remove('faq-hidden')
+    container.classList.add('faq-visible')
+    document.getElementById('faqIcon3').classList.add('active')
+
+  } else {
+    container.classList.remove('faq-visible')
+    container.classList.add('faq-hidden')
+    document.getElementById('faqIcon3').classList.remove('active')
+
+  }})
+

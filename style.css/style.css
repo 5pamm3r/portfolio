@@ -1,5 +1,6 @@
 :root {
-  --backgroundColor: #1f1d36; }
+  --backgroundColor: #1f1d36;
+  --padding-left-right: calc((100vw + 80px) / 21); }
 
 * {
   box-sizing: border-box;
@@ -19,6 +20,8 @@ body {
     justify-content: center;
     width: 100%;
     padding: 20px 0;
+    padding-left: var(--padding-left-right);
+    padding-right: var(--padding-left-right);
     z-index: 1; }
     body .header .header__list {
       display: flex;
@@ -41,10 +44,11 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    margin-left: 30px; }
+    padding-left: var(--padding-left-right);
+    padding-right: var(--padding-left-right); }
     body .main .home .profile__container .available-for-work {
       position: absolute;
-      right: 10vw;
+      right: 0;
       top: 20vh;
       animation: rotation 25s infinite linear; }
     body .main .home .profile__container .skills__container {
@@ -75,13 +79,13 @@ body {
       color: red; }
     body .main .home .availability {
       font-size: 2.5rem; }
-    body .main .home .contact {
+    body .main .home .main-contact {
       display: flex;
       gap: 20px;
       margin-top: 10px; }
-      body .main .home .contact .imageContact__container {
+      body .main .home .main-contact .imageContact__container {
         width: 30px; }
-        body .main .home .contact .imageContact__container img {
+        body .main .home .main-contact .imageContact__container img {
           width: 100%; }
     body .main .home .arrow {
       position: absolute;
@@ -94,7 +98,8 @@ body {
     align-items: center;
     height: 100vh;
     gap: 40px;
-    margin: 0 30px;
+    padding-left: var(--padding-left-right);
+    padding-right: var(--padding-left-right);
     position: relative; }
     body .about .first-line {
       border-bottom: 3px solid black;
@@ -138,6 +143,112 @@ body {
     body .about__container .skills-area__images {
       display: flex;
       gap: 20px; }
+    body .about::after {
+      content: "";
+      height: 5px;
+      margin-top: 60px;
+      background-color: black;
+      display: block; }
+  body .projects {
+    margin-top: 80px;
+    padding-left: var(--padding-left-right);
+    padding-right: var(--padding-left-right); }
+    body .projects .project__container {
+      display: flex;
+      justify-content: space-between;
+      padding: 80px 0;
+      border-bottom: 1px solid #ccc; }
+      body .projects .project__container:nth-child(3) {
+        border: none; }
+      body .projects .project__container .projectDescription__container .project-tag {
+        margin-bottom: 30px; }
+      body .projects .project__container .projectDescription__container .projectInfo__container .project__title {
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin-bottom: 10px; }
+      body .projects .project__container .projectDescription__container .projectInfo__container .project__subtitle {
+        font-size: 1.8rem;
+        margin-bottom: 30px; }
+      body .projects .project__container .projectDescription__container .description__container {
+        margin-bottom: 30px; }
+        body .projects .project__container .projectDescription__container .description__container .project__description {
+          font-size: 1.4rem;
+          line-height: 1.6; }
+      body .projects .project__container .video__container {
+        width: 550px;
+        height: 300px;
+        border: 1px solid black; }
+      body .projects .project__container .explore__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none; }
+        body .projects .project__container .explore__link .explore {
+          font-size: 1.2rem;
+          color: darkgray; }
+        body .projects .project__container .explore__link img {
+          margin-left: 20px;
+          width: 30px;
+          height: 30px; }
+  body .contact {
+    background-color: #242324;
+    color: white; }
+    body .contact .faq__container .faq-subtitle {
+      font-size: 7rem;
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke: 1.5px #735c73;
+      padding-left: var(--padding-left-right); }
+    body .contact .faq__container .faq-item__container {
+      margin: 0 auto;
+      width: 80%; }
+      body .contact .faq__container .faq-item__container .faq-item {
+        margin: 20px 0;
+        padding: 20px 0;
+        border-bottom: 1px solid gray; }
+        body .contact .faq__container .faq-item__container .faq-item .faq-title__container {
+          display: flex;
+          align-items: center;
+          gap: 6px; }
+          body .contact .faq__container .faq-item__container .faq-item .faq-title__container div {
+            position: relative; }
+            body .contact .faq__container .faq-item__container .faq-item .faq-title__container div .faq-icon {
+              width: 30px;
+              height: 5px;
+              background-color: red; }
+            body .contact .faq__container .faq-item__container .faq-item .faq-title__container div .faq-icon2 {
+              position: absolute;
+              top: 0;
+              width: 30px;
+              height: 5px;
+              background-color: red;
+              transition: transform .5s;
+              transform: rotate(0deg); }
+            body .contact .faq__container .faq-item__container .faq-item .faq-title__container div .faq-icon2.active {
+              transform: rotate(90deg); }
+          body .contact .faq__container .faq-item__container .faq-item .faq-title__container .faq-question {
+            font-size: 3rem;
+            font-weight: bold; }
+        body .contact .faq__container .faq-item__container .faq-item .faq-hidden {
+          display: none; }
+        body .contact .faq__container .faq-item__container .faq-item .faq-visible {
+          opacity: 0.75;
+          display: block;
+          padding-top: 40px;
+          padding-left: 90px;
+          font-size: 1.5rem;
+          line-height: 1.8; }
+          body .contact .faq__container .faq-item__container .faq-item .faq-visible div p {
+            margin-bottom: 20px; }
+          body .contact .faq__container .faq-item__container .faq-item .faq-visible div div {
+            display: flex;
+            flex-direction: column; }
+            body .contact .faq__container .faq-item__container .faq-item .faq-visible div div .faq-icon {
+              width: 30px;
+              height: 5px;
+              background-color: red; }
+            body .contact .faq__container .faq-item__container .faq-item .faq-visible div div .redline-container {
+              flex-direction: row;
+              align-items: center; }
 
 @keyframes arrow {
   0% {

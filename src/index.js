@@ -1,8 +1,8 @@
 import { contactContainer, fragment } from "./contact.js";
 import { projects, fragmentProject } from "./projects.js";
 
-const getContact = (() => {
-  const contact = document.querySelector("#contact");
+const getContact = (id) => {
+  const contact = document.querySelector(id);
   contactContainer(
     "https://www.linkedin.com/in/carlos-massarino-9970b1234/",
     "../public/assets/icons/linkedin-black.svg"
@@ -16,7 +16,7 @@ const getContact = (() => {
     "../public/assets/icons/github.png"
   );
   contact.append(fragment);
-})();
+};
 
 const getProject = (() => {
   const project = document.querySelector('#projects');
@@ -43,6 +43,9 @@ const getProject = (() => {
   )
   project.append(fragmentProject)
 })();
+
+getContact('#contact')
+getContact('#footerContact')
 
 //hacer una func.
 document.getElementById('faq-item1').addEventListener('click',e=>{
@@ -85,3 +88,6 @@ document.getElementById('faq-item3').addEventListener('click',e=>{
 
   }})
 
+  document.querySelector('.hamburger').addEventListener('click', (e) => {
+    e.currentTarget.classList.toggle('is-active');
+  })

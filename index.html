@@ -15,32 +15,25 @@
   </head>
   <body>
     <header class="header">
-      <nav>
+      <!-- <nav>
         <ul class="header__list">
           <li class="header__links"><a href="#about">About</a></li>
           <li class="header__links"><a href="#projects">Projects</a></li>
           <li class="header__links"><a href="#">Contact</a></li>
         </ul>
-      </nav>
+      </nav> -->
+      <div class="hamburger">
+        <div class="hamburger__container">
+          <div class="hamburger__inner"></div>
+          <div class="hamburger__hidden"></div>
+        </div>
+      </div>
     </header>
     <main class="main">
       <section class="home" id="home">
         <div class="profile__container">
           <div class="home__description">
             <p class="title">Carlos Massarino</p>
-            <div class="skills__container">
-              <div class="skillsImg__container">
-                <img
-                  src="https://img.icons8.com/carbon-copy/100/000000/down-right-arrow.png"
-                />
-              </div>
-              <div class="skills__text">
-                <span>Developer</span>
-                <span>UX/UI Designer</span>
-                <span>Freelance</span>
-              </div>
-            </div>
-            <!-- <p class="subtitle">Frontend Developer</p> -->
             <p class="home__info">
               I Craft High-Performing <br /><span class="text-red">+</span>
               Beautiful Websites
@@ -129,7 +122,6 @@
               <div class="faq-hidden" id="faqHidden-item1">
                 <div>
                   <div>
-                    <div class="faq-icon"></div>
                     <p>
                       It will depend upon the scope and requirements of the
                       project. For reference, past projects have ranged between
@@ -137,7 +129,6 @@
                     </p>
                   </div>
                   <div>
-                    <div class="faq-icon"></div>
                     <p>
                       On the discovery call, we will seek to identify specifics
                       and objectives that can affect the cost. These are things
@@ -147,7 +138,6 @@
                     </p>
                   </div>
                   <div>
-                    <div class="faq-icon"></div>
                     <p>
                       If all you need is a basic, one-pager landing page, then
                       this will cost you around $2,000-$4,000.
@@ -169,23 +159,23 @@
               <div class="faq-hidden" id="faqHidden-item2">
                 <div>
                   <p>It will depend on the scope of the project.</p>
-                  <div>
-                    <div class="redline-container">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="2" viewBox="0 0 24 2">
-                        <line id="Line_13" data-name="Line 13" x1="24" transform="translate(0 1)" fill="none" stroke="#f23333" stroke-width="2"/>
-                      </svg>
+                  <ul class="sec">
+                    <li class="redline-container">
+                      <div>
+                        <img src="./public/assets/icons/redline.svg" />
+                      </div>
                       <p>
-                        A single landing page may take 1-3 weeks, depending on the
-                        amount of copy.
+                        A single landing page may take 1-3 weeks, depending on
+                        the amount of copy.
                       </p>
-                    </div>
-                    <div class="redline-container">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="2" viewBox="0 0 24 2">
-                        <line id="Line_13" data-name="Line 13" x1="24" transform="translate(0 1)" fill="none" stroke="#f23333" stroke-width="2"/>
-                      </svg>
+                    </li>
+                    <li class="redline-container">
+                      <div>
+                        <img src="./public/assets/icons/redline.svg" />
+                      </div>
                       <p>A full website with 5-10 pages may take 6-8 weeks.</p>
-                    </div>
-                  </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -193,7 +183,7 @@
               <div class="faq-title__container">
                 <div>
                   <div class="faq-icon"></div>
-                  <div class="faq-icon3" id="faqIcon3"></div>
+                  <div class="faq-icon2" id="faqIcon3"></div>
                 </div>
                 <p class="faq-question">
                   Do you offer other design services besides web design?
@@ -202,11 +192,26 @@
               <div class="faq-hidden" id="faqHidden-item3">
                 <div>
                   <p>Yes. Here are the other design services that i provide:</p>
-                  <div>
-                    <p>Branding Design</p>
-                    <p>UX/UI Design</p>
-                    <p>Infographics Designs</p>
-                  </div>
+                  <ul class="sec">
+                    <li class="redline-container">
+                      <div>
+                        <img src="./public/assets/icons/redline.svg" />
+                      </div>
+                      <p>Branding Design</p>
+                    </li>
+                    <li class="redline-container">
+                      <div>
+                        <img src="./public/assets/icons/redline.svg" />
+                      </div>
+                      <p>UX/UI Design</p>
+                    </li>
+                    <li class="redline-container">
+                      <div>
+                        <img src="./public/assets/icons/redline.svg" />
+                      </div>
+                      <p>Infographics Designs</p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -214,6 +219,26 @@
         </div>
       </section>
     </main>
+    <footer class="footer__container">
+      <div class="footer-text__container">
+        <p>Need a High-Performing Website?</p>
+        <p>let's get <span class="text-red">started</span></p>
+        <button class="send-email" href="mailto:cmassarino.dev@gmail.com">
+            <span>send me an email</span>
+            <img
+              src="./public/assets/icons/button-arrow.svg"
+              alt="arrow"
+              class="arrow-img"
+            />
+        </button>
+      </div>
+      <div class="footer-contact__container">
+        <div class="footer-logo"></div>
+        <div class="footer-contact" id="footerContact">
+
+        </div>
+      </div>
+    </footer>
 
     <template id="templateContact">
       <div class="imageContact__container">

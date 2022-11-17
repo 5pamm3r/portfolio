@@ -126,8 +126,8 @@ body {
     padding-right: var(--padding-left-right); }
     body .main .home .profile__container .available-for-work {
       position: absolute;
-      right: 0;
-      top: 20vh;
+      right: 20%;
+      top: 30%;
       animation: rotation 25s infinite linear; }
     body .main .home .profile__container .skills__container {
       position: absolute;
@@ -253,9 +253,15 @@ body {
           font-size: 1.4rem;
           line-height: 1.6; }
       body .projects .project__container .video__container {
+        position: relative;
         width: 550px;
         height: 300px;
-        border: 1px solid black; }
+        border: 3px solid black; }
+        body .projects .project__container .video__container img {
+          position: absolute;
+          width: 200px;
+          bottom: -30px;
+          left: -56px; }
       body .projects .project__container .explore__link {
         display: flex;
         align-items: center;
@@ -267,6 +273,14 @@ body {
           margin-left: 20px;
           width: 30px;
           height: 30px; }
+      body .projects .project__container:nth-child(2) .video__container img {
+        width: 300px;
+        left: -130px;
+        bottom: -38px; }
+      body .projects .project__container:nth-child(3) .video__container img {
+        width: 250px;
+        left: -120px;
+        bottom: -46px; }
   body .contact {
     background-color: #242324;
     color: white;
@@ -389,13 +403,19 @@ body {
           transition: .2s ease-in-out all; }
     body .footer__container .footer-contact__container {
       width: 100%;
-      border-bottom: 1px solid black; }
+      border-bottom: 1px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
       body .footer__container .footer-contact__container .footer-contact {
         display: flex;
         gap: 20px;
         justify-content: flex-end; }
         body .footer__container .footer-contact__container .footer-contact img {
           width: 40px; }
+      body .footer__container .footer-contact__container .footer-logo img {
+        width: 90px;
+        padding-bottom: 10px; }
 
 @keyframes arrow {
   0% {

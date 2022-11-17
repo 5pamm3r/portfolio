@@ -169,8 +169,8 @@ body {
       .profile__container {
         .available-for-work {
           position: absolute;
-          right: 0;
-          top: 20vh;
+          right: 20%;
+          top: 30%;
           animation: rotation 25s infinite linear;
         }
         .skills__container {
@@ -342,10 +342,18 @@ body {
         }
       }
       .video__container {
+        position: relative;
         width: 550px;
         height: 300px;
-        border: 1px solid black;
+        border: 3px solid black;
+        img {
+          position: absolute;
+          width: 200px;
+          bottom: -30px;
+          left: -56px;
+        }
       }
+
       .explore__link {
         display: flex;
         align-items: center;
@@ -359,6 +367,16 @@ body {
           width: 30px;
           height: 30px;
         }
+      }
+      &:nth-child(2) .video__container img {
+        width: 300px;
+        left: -130px;
+        bottom: -38px;
+      }
+      &:nth-child(3) .video__container img {
+        width: 250px;
+        left: -120px;
+        bottom: -46px;
       }
     }
   }
@@ -521,12 +539,21 @@ body {
     .footer-contact__container {
       width: 100%;
       border-bottom: 1px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       .footer-contact {
         display: flex;
         gap: 20px;
         justify-content: flex-end;
         img {
           width: 40px;
+        }
+      }
+      .footer-logo {
+        img {
+          width: 90px;
+          padding-bottom: 10px;
         }
       }
     }

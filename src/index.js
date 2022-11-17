@@ -26,6 +26,7 @@ const getProject = (() => {
     'A simplified yet beautiful shopping experience',
     'with an innovative approach to e-commerce',
     'in the digital space.',
+    '../public/assets/icons/wallet.png'
   )
   projects(
     'Umbrella',
@@ -33,6 +34,7 @@ const getProject = (() => {
     'A simplified yet beautiful shopping experience',
     'with an innovative approach to e-commerce',
     'in the digital space.',
+    '../public/assets/icons/umbrellaIcon.png'
   )
   projects(
     'Wish List',
@@ -40,6 +42,7 @@ const getProject = (() => {
     'A simplified yet beautiful shopping experience',
     'with an innovative approach to e-commerce',
     'in the digital space.',
+    '../public/assets/icons/pencil.png' 
   )
   project.append(fragmentProject)
 })();

@@ -195,32 +195,30 @@ body {
       font-weight: bold; }
     body .about .second-title {
       margin-left: 100px; }
-    body .about__container .img-profile {
-      position: absolute;
-      right: 0;
-      top: 10vh;
-      z-index: -1;
-      margin: 0 auto;
-      width: 600px; }
-      body .about__container .img-profile img {
-        border-radius: 20px;
-        width: 100%;
-        object-fit: cover; }
-    body .about__container .text-area {
-      font-size: 2.5rem;
-      width: 600px;
-      line-height: 1.5;
-      margin-left: 100px;
-      margin-top: 50px; }
-      body .about__container .text-area p {
-        margin: 10px 0; }
+    body .about__container .text-img__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      body .about__container .text-img__container .grey-ellipse {
+        position: absolute;
+        left: 0; }
+      body .about__container .text-img__container .text-area {
+        font-size: 2.5rem;
+        width: 600px;
+        line-height: 1.5;
+        margin-left: 100px;
+        margin-top: 50px; }
+        body .about__container .text-img__container .text-area p {
+          margin: 10px 0; }
+      body .about__container .text-img__container .img-profile {
+        width: 400px; }
+        body .about__container .text-img__container .img-profile img {
+          width: 100%;
+          object-fit: cover; }
     body .about__container .skills-area {
       margin-top: 40px;
       font-size: 2.5rem;
       margin-left: 100px; }
-    body .about__container .skills-area__images {
-      display: flex;
-      gap: 20px; }
     body .about::after {
       content: "";
       height: 5px;
@@ -322,10 +320,14 @@ body {
             font-size: 3rem;
             font-weight: bold; }
         body .contact .faq__container .faq-item__container .faq-item .faq-hidden {
-          display: none; }
+          overflow: hidden;
+          height: 0;
+          opacity: 0;
+          transition: height 0ms 400ms, opacity 400ms 0ms; }
         body .contact .faq__container .faq-item__container .faq-item .faq-visible {
-          opacity: 0.75;
-          display: block;
+          height: auto;
+          opacity: 1;
+          transition: height 0ms 0ms, opacity 1s 0ms;
           padding-top: 40px;
           padding-left: 90px;
           font-size: 1.5rem;
@@ -393,14 +395,14 @@ body {
           width: max-content;
           left: 17%;
           top: 30%;
-          transition: transform .2s ease-in-out; }
+          transition: transform 0.2s ease-in-out; }
         body .footer__container .footer-text__container .send-email .arrow-img {
           position: absolute;
           opacity: 0;
           bottom: 0;
           right: 10px;
           width: 10px;
-          transition: .2s ease-in-out all; }
+          transition: 0.2s ease-in-out all; }
     body .footer__container .footer-contact__container {
       width: 100%;
       border-bottom: 1px solid black;

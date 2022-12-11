@@ -11,6 +11,9 @@ class SkillsList extends HTMLElement {
         display: flex;
         gap: 20px;
       }
+    .skills-area__images img {
+      width: 50px;
+    }
     `
     this.ulHeader = document.createElement('ul')
     this.ulHeader.setAttribute('class', 'skills-area__images')

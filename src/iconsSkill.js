@@ -25,5 +25,13 @@ export const iconsSkill = [
   {
     name: 'PUG',
     icon: '../public/assets/icons/pug.png',
+  },
+  {
+    name: 'TYPESCRIPT',
+    icon: '../public/assets/icons/typescript.png'
+  },
+  {
+    name: 'MySQL',
+    icon: '../public/assets/icons/mysql.png'
   }
 ]

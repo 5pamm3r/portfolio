@@ -23,26 +23,23 @@ const getProject = (() => {
   projects(
     'Expense tracker',
     'React, UX/UI Design',
-    'A simplified yet beautiful shopping experience',
-    'with an innovative approach to e-commerce',
-    'in the digital space.',
-    '../public/assets/icons/wallet.png'
+    'Do you feel that money flies? To optimize expenses, it is important to know what is spent on. There is only one way to do it and that is to keep track of expenses.',
+    '../public/assets/images/cryptoWallet.png'
   )
   projects(
     'Umbrella',
     'JavaScript, UX/UI Design',
-    'A simplified yet beautiful shopping experience',
-    'with an innovative approach to e-commerce',
-    'in the digital space.',
-    '../public/assets/icons/umbrellaIcon.png'
+    'Are you worried about the weather? In this app you will find basic information such as the current weather situation, as well as the forecast for days or hours.',
+    '../public/assets/images/umbrella.png'
+    
   )
   projects(
     'Wish List',
     'React, UX/UI Design',
-    'A simplified yet beautiful shopping experience',
-    'with an innovative approach to e-commerce',
-    'in the digital space.',
-    '../public/assets/icons/pencil.png' 
+    'Organize effectively and say goodbye to stress. Plan, manage and control all your tasks in an application that will improve your efficiency at work and in your personal life',
+    '../public/assets/images/featherPens.png',
+    '../public/assets/videos/video-wishlist.mp4',
+    'https://github.com/5pamm3r/wish-list'
   )
   project.append(fragmentProject)
 })();
@@ -91,6 +88,6 @@ document.getElementById('faq-item3').addEventListener('click',e=>{
 
   }})
 
-  document.querySelector('.hamburger').addEventListener('click', (e) => {
-    e.currentTarget.classList.toggle('is-active');
-  })
+  // document.querySelector('.hamburger').addEventListener('click', (e) => {
+  //   e.currentTarget.classList.toggle('is-active');
+  // })

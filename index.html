@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css/style.css" />
+    <link rel="stylesheet" href="./public/css/main.min.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -22,34 +22,34 @@
           <li class="header__links"><a href="#">Contact</a></li>
         </ul>
       </nav> -->
-      <div class="hamburger">
+      <!-- <div class="hamburger">
         <div class="hamburger__container">
           <div class="hamburger__inner"></div>
           <div class="hamburger__hidden"></div>
         </div>
-      </div>
+      </div> -->
     </header>
     <main class="main">
       <section class="home" id="home">
         <div class="profile__container">
           <div class="home__description">
-            <p class="title">Carlos Massarino</p>
-            <p class="home__info">
-              I Craft High-Performing <br /><span class="text-red">+</span>
+            <h1 class="title">Carlos Massarino</h1>
+            <p lang="en" class="home__info">
+              I Craft High-Performing 
+              <span class="text-red">+</span> <br />
+              Accessible
+              <span class="text-red">+</span>
               Beautiful Websites
             </p>
-            <p class="availability">Get in touch for availability.</p>
-            <img
+            <p lang="en" class="availability">Get in touch for availability.</p>
+            <!-- <img
               src="./public/assets/images/available-for-work.svg"
               class="available-for-work"
-            />
+            /> -->
             <div class="main-contact" id="contact"></div>
           </div>
-          <!-- <div class="probando2-container">
-            <img src="./public/assets/images/probando2.png" />
-          </div> -->
         </div>
-        <a href="#about">
+        <a class="arrow-link" href="#about">
           <img
             class="arrow"
             src="./public/assets/icons/down-arrow.png"
@@ -83,7 +83,9 @@
                 interfaces using React, Canvas, Atomic Architecture and Design
                 Systems.
               </p>
-              <p>I write code and improve my design and english skills every day.</p>
+              <p>
+                I write code and improve my design and english skills every day.
+              </p>
             </div>
             <div class="img-profile">
               <img src="./public/assets/images/profile.png" alt="profile" />
@@ -97,7 +99,7 @@
       </section>
 
       <section id="projects" class="projects"></section>
-      <section id="contact" class="contact">
+      <section id="faq" class="faq">
         <div class="faq__container">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +200,6 @@
               </div>
               <div class="faq-hidden" id="faqHidden-item3">
                 <div>
-                  <!-- <p>Web pages to get started:</p> -->
                   <ul class="sec">
                     <li class="redline-container">
                       <div>
@@ -210,7 +211,9 @@
                       <div>
                         <img src="./public/assets/icons/redline.svg" />
                       </div>
-                      <p>Video tutorials to learn how to manage your website.</p>
+                      <p>
+                        Video tutorials to learn how to manage your website.
+                      </p>
                     </li>
                     <li class="redline-container">
                       <div>
@@ -264,18 +267,26 @@
             <h2 id="projectSubtitle" class="project__subtitle"></h2>
           </div>
           <div class="description__container">
-            <p id="projectDescription1" class="project__description"></p>
-            <p id="projectDescription2" class="project__description"></p>
-            <p id="projectDescription3" class="project__description"></p>
+            <p id="projectDescription" class="project__description"></p>
           </div>
-          <a href="#" class="explore__link">
+          <a id="projectLink" href="#" class="explore__link" target="_blank" rel="noopener noreferrer">
             <span class="explore">EXPLORE</span>
             <img src="./public/assets/icons/right-arrow.png" />
           </a>
         </div>
         <div class="video__container">
-          <img id="projectImg" />
-          <video id="projectVideo"></video>
+          <img id="projectImg" alt="" />
+          <video
+            autoplay="autoplay"
+            loop="loop"
+            muted
+            defaultMuted
+            playsinline
+            preload="auto"
+            id="miVideo"
+          >
+            <source id="projectVideo" type="video/mp4" />
+          </video>
         </div>
       </div>
     </template>

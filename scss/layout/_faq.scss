@@ -1,0 +1,100 @@
+.faq {
+  background-color: #242324;
+  color: white;
+  padding-bottom: 100px;
+  .faq__container {
+    overflow-x: hidden;
+    .faq-subtitle {
+      font-size: 7rem;
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke: 1.5px #735c73;
+      padding-left: var(--padding-left-right);
+    }
+    .faq-item__container {
+      // margin-left: 50px;
+      // margin-top: 30px;
+      // padding-left: var(--padding-left-right);
+      // padding-right: var(--padding-left-right);
+      margin: 0 auto;
+      width: 80%;
+      .faq-item {
+        margin: 20px 0;
+        padding: 20px 0;
+        border-bottom: 1px solid gray;
+        .faq-title__container {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          div {
+            position: relative;
+            .faq-icon {
+              width: 30px;
+              height: 5px;
+              background-color: red;
+            }
+            .faq-icon2 {
+              position: absolute;
+              top: 0;
+              width: 30px;
+              height: 5px;
+              background-color: red;
+              transition: transform 0.5s;
+              transform: rotate(0deg);
+            }
+            .faq-icon2.active {
+              transform: rotate(90deg);
+            }
+          }
+          .faq-question {
+            font-size: 3rem;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+        .faq-hidden {
+          overflow: hidden;
+          height: 0;
+          opacity: 0;
+          transition: height 0ms 400ms, opacity 400ms 0ms;
+        }
+        .faq-visible {
+          height: auto;
+          opacity: 1;
+          transition: height 0ms 0ms, opacity 1s 0ms;
+          padding-top: 40px;
+          padding-left: 90px;
+          font-size: 1.5rem;
+          line-height: 1.8;
+          div {
+            p {
+              margin-bottom: 20px;
+            }
+            .sec {
+              display: flex;
+              flex-direction: column;
+              .redline-container {
+                display: flex;
+                position: relative;
+                flex-direction: row;
+                align-items: baseline;
+                gap: 6px;
+                list-style: none;
+                div {
+                  margin-right: 25px;
+                  img {
+                    position: absolute;
+                    top: calc(50% - 12px);
+                  }
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(3) {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

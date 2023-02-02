@@ -1,0 +1,10 @@
+@mixin line-props {
+  width: 100%;
+  height: $h-line-height;
+  background-color: $h-line-color;
+  border-radius: $h-border-radius;
+  position: absolute;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: $h-transition-time;
+}

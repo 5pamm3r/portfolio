@@ -11,10 +11,6 @@ export const iconsSkill = [
     icon: '../public/assets/icons/javascript.png',
   },
   {
-    name: 'GH',
-    icon: '../public/assets/icons/github.png',
-  },
-  {
     name: 'REACT',
     icon: '../public/assets/icons/react.png',
   },
@@ -33,5 +29,9 @@ export const iconsSkill = [
   {
     name: 'MySQL',
     icon: '../public/assets/icons/mysql.png'
-  }
+  },
+  {
+    name: 'GITHUB',
+    icon: '../public/assets/icons/github.png',
+  },
 ]

@@ -1,5 +1,8 @@
 import { contactContainer, fragment } from "./contact.js";
 import { projects, fragmentProject } from "./projects.js";
+import { styles } from './styles.js';
+import { skillsList } from './skillsList.js';
+import { SKILLS } from "./skills.js";
 
 const getContact = (id) => {
   const contact = document.querySelector(id);
@@ -36,7 +39,7 @@ const getProject = (() => {
   projects(
     'Wish List',
     'React, UX/UI Design',
-    'Organize effectively and say goodbye to stress. Plan, manage and control all your tasks in an application that will improve your efficiency at work and in your personal life',
+    'Organize effectively and say goodbye to stress. Plan, manage and control all your tasks in an application that will improve your efficiency at work and in your personal life.',
     '../public/assets/images/featherPens.png',
     '../public/assets/videos/video-wishlist.mp4',
     'https://github.com/5pamm3r/wish-list'
@@ -44,50 +47,14 @@ const getProject = (() => {
   project.append(fragmentProject)
 })();
 
+const getSkills = () => {
+  SKILLS.map(e=>{
+    skillsList(e.name, e.icon)
+  })
+}
+
 getContact('#contact')
 getContact('#footerContact')
+getSkills()
 
-//hacer una func.
-document.getElementById('faq-item1').addEventListener('click',e=>{
-  const container = document.getElementById('faqHidden-item1')
-  if(container.classList.contains('faq-hidden')){
-    container.classList.remove('faq-hidden')
-    container.classList.add('faq-visible')
-    document.getElementById('faqIcon1').classList.add('active')
-  } else {
-    container.classList.remove('faq-visible')
-    container.classList.add('faq-hidden')
-    document.getElementById('faqIcon1').classList.remove('active')
-
-  }
-})
-document.getElementById('faq-item2').addEventListener('click',e=>{
-  const container = document.getElementById('faqHidden-item2')
-  if(container.classList.contains('faq-hidden')){
-    container.classList.remove('faq-hidden')
-    container.classList.add('faq-visible')
-    document.getElementById('faqIcon2').classList.add('active')
-
-  } else {
-    container.classList.remove('faq-visible')
-    container.classList.add('faq-hidden')
-    document.getElementById('faqIcon2').classList.remove('active')
-
-  }})
-document.getElementById('faq-item3').addEventListener('click',e=>{
-  const container = document.getElementById('faqHidden-item3')
-  if(container.classList.contains('faq-hidden')){
-    container.classList.remove('faq-hidden')
-    container.classList.add('faq-visible')
-    document.getElementById('faqIcon3').classList.add('active')
-
-  } else {
-    container.classList.remove('faq-visible')
-    container.classList.add('faq-hidden')
-    document.getElementById('faqIcon3').classList.remove('active')
-
-  }})
-
-  // document.querySelector('.hamburger').addEventListener('click', (e) => {
-  //   e.currentTarget.classList.toggle('is-active');
-  // })
+styles()

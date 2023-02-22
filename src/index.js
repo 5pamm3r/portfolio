@@ -8,15 +8,15 @@ const getContact = (id) => {
   const contact = document.querySelector(id);
   contactContainer(
     "https://www.linkedin.com/in/carlos-massarino-9970b1234/",
-    "../public/assets/icons/linkedin-black.svg"
+    "./public/assets/icons/linkedin-black.svg"
   );
   contactContainer(
     "https://twitter.com/C_Massarino",
-    "../public/assets/icons/twitter-black.svg"
+    "./public/assets/icons/twitter-black.svg"
   );
   contactContainer(
     "https://github.com/5pamm3r",
-    "../public/assets/icons/github.png"
+    "./public/assets/icons/github.png"
   );
   contact.append(fragment);
 };

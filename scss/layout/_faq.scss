@@ -12,10 +12,7 @@
       padding-left: var(--padding-left-right);
     }
     .faq-item__container {
-      // margin-left: 50px;
-      // margin-top: 30px;
-      // padding-left: var(--padding-left-right);
-      // padding-right: var(--padding-left-right);
+      transition: height 2s 2s;
       margin: 0 auto;
       width: 80%;
       .faq-item {
@@ -52,20 +49,27 @@
             cursor: pointer;
           }
         }
-        .faq-hidden {
-          overflow: hidden;
-          height: 0;
-          opacity: 0;
-          transition: height 0ms 400ms, opacity 400ms 0ms;
-        }
-        .faq-visible {
-          height: auto;
-          opacity: 1;
-          transition: height 0ms 0ms, opacity 1s 0ms;
+        .faq-hid-act {
           padding-top: 40px;
           padding-left: 90px;
           font-size: 1.5rem;
           line-height: 1.8;
+          &.faq-hidden {
+            overflow: hidden;
+            height: 20px;
+            transition: height .3s 230ms;
+            .hidden {
+              opacity: 0;
+              transition: opacity .5s .2s;
+            }
+          } 
+          &.faq-visible {
+            transition: height .3s 230ms;
+            .active {
+              opacity: 1;
+              transition: opacity 1s .3s;
+            }
+          }
           div {
             p {
               margin-bottom: 20px;

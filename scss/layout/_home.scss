@@ -29,11 +29,6 @@
     font-weight: bold;
     -webkit-text-stroke: 1.5px black;
   }
-  .subtitle {
-    font-size: 3.5rem;
-    color: black;
-    margin-bottom: 20px;
-  }
   .home__info {
     font-size: 4rem;
     font-weight: bold;
@@ -52,6 +47,10 @@
     margin-top: 10px;
     .imageContact__container {
       width: 30px;
+      // &:hover {
+      //   transform: scale(1.2);
+      //   transition: transform 10ms 10ms;
+      // }
       img {
         width: 100%;
       }

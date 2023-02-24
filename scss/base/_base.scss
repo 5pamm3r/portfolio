@@ -1,24 +1,25 @@
+//burguer
+$h-padding: 15px;
+$h-width: 36px;
+$h-height: 24px;
+$h-background-color: transparent;
+$h-line-height: 2px;
+$h-border-radius: 4px;
+$h-transition-time: 0.4s;
+$h-transition-function: ease;
+$h-transition-opacity: 0;
+$h-vertical-gap: 13px;
+$h-initial-opposition: 5px;
+$h-hide-distance: $h-width + $h-padding;
+
 :root {
   --backgroundColor: #1f1d36;
   --padding-left-right: calc((100vw + 80px) / 21);
-  --red: #f23333;
-  --gray: #606060;
   --subtitle: 2rem;
   --text-size: 2.2rem;
-  $h-padding: 15px;
-  $h-width: 36px;
-  $h-height: 24px;
-  $h-background-color: transparent;
-  $h-line-color: black;
-  $h-hover-line-color: red;
-  $h-line-height: 2px;
-  $h-border-radius: 4px;
-  $h-transition-time: 0.4s;
-  $h-transition-function: ease;
-  $h-transition-opacity: 0;
-  $h-vertical-gap: 13px;
-  $h-initial-opposition: 5px;
-  $h-hide-distance: $h-width + $h-padding;
+  --title-project: 3.5rem;
+  --subtitle-project: 1.8rem;
+  --text-project: 1.4rem;
 }
 * {
   box-sizing: border-box;
@@ -33,4 +34,15 @@ html {
 body {
   position: relative;
   // overflow-x: hidden;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }

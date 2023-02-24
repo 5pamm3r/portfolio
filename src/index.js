@@ -3,18 +3,22 @@ import { projects, fragmentProject } from "./projects.js";
 import { styles } from './styles.js';
 import { skillsList } from './skillsList.js';
 import { SKILLS } from "./skills.js";
+import { itemSlide } from "./animations.js";
 
 const getContact = (id) => {
   const contact = document.querySelector(id);
   contactContainer(
+    "linkedInContact",
     "https://www.linkedin.com/in/carlos-massarino-9970b1234/",
     "./public/assets/icons/linkedin-black.svg"
   );
   contactContainer(
+    "twitterContact",
     "https://twitter.com/C_Massarino",
     "./public/assets/icons/twitter-black.svg"
   );
   contactContainer(
+    "githubContact",
     "https://github.com/5pamm3r",
     "./public/assets/icons/github.png"
   );
@@ -56,5 +60,5 @@ const getSkills = () => {
 getContact('#contact')
 getContact('#footerContact')
 getSkills()
-
+itemSlide()
 styles()

@@ -33,15 +33,15 @@
       <section class="home" id="home">
         <div class="profile__container">
           <div class="home__description">
-            <h1 class="title">Carlos Massarino</h1>
-            <p lang="en" class="home__info">
+            <h1 class="title" id="title">Carlos Massarino</h1>
+            <p lang="en" class="home__info" id="homeInfo">
               I Craft High-Performing 
               <span class="text-red">+</span> <br />
               Accessible
               <span class="text-red">+</span>
               Beautiful Websites
             </p>
-            <p lang="en" class="availability">Get in touch for availability.</p>
+            <p lang="en" class="availability" id="getInTouch">Get in touch for availability.</p>
             <!-- <img
               src="./public/assets/images/available-for-work.svg"
               class="available-for-work"
@@ -69,13 +69,13 @@
               alt="eclipse"
             />
             <div class="text-area">
-              <p lang="en">
+              <p lang="en" class="itemSlide" id="itemSlide1">
                 Currently I am dedicated to the development of web applications focused on improving performance and user experience.
               </p>
-              <p lang="en">
+              <p lang="en" class="itemSlide" id="itemSlide2">
                 I am a self-taught person willing to learn and face new challenges that allow me to acquire new tools to enhance my work.
               </p>
-              <p lang="en">
+              <p lang="en" class="itemSlide" id="itemSlide3">
                 I specialize in creating interactive experiences using React, Canvas, A11y and Atomic Architecture. I write code and improve my design and english skills every day.
               </p>
               <div class="redline__container">
@@ -248,8 +248,8 @@
 
     <template id="templateContact">
       <div class="imageContact__container">
-        <a target="_blank" rel="noopener noreferrer" id="contactLink">
-          <img id="contactImg" />
+        <a target="_blank" rel="noopener noreferrer" class="contactLink">
+          <img class="contactImg"/>
         </a>
       </div>
     </template>

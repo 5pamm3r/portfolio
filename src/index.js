@@ -3,7 +3,7 @@ import { projects, fragmentProject } from "./projects.js";
 import { styles } from './styles.js';
 import { skillsList } from './skillsList.js';
 import { SKILLS } from "./skills.js";
-import { itemSlide } from "./animations.js";
+import { topSlide } from "./animations.js";
 
 const getContact = (id) => {
   const contact = document.querySelector(id);
@@ -60,5 +60,5 @@ const getSkills = () => {
 getContact('#contact')
 getContact('#footerContact')
 getSkills()
-itemSlide()
+topSlide()
 styles()

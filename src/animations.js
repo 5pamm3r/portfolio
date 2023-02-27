@@ -1,33 +1,27 @@
-function itemSlide() {
-  const $image1 = document.getElementById('itemSlide1')
-  const $image2 = document.getElementById('itemSlide2')
-  const $image3 = document.getElementById('itemSlide3')
-  const $linkedIn = document.getElementById('linkedInContact')
-  const $twitter = document.getElementById('twitterContact')
-  const $github = document.getElementById('githubContact')
+function topSlide() {
+  const about = document.getElementById('about')
+  const projects = document.querySelectorAll('.projectSlide')
+  const logo = document.getElementById('linkedInContact')
+  const logo2 = document.getElementById('twitterContact')
+  const logo3 = document.getElementById('githubContact')
+  const downArrow = document.getElementById('downArrow')
+  const profile = document.getElementById('imgProfile')
 
-  const loadImage = (entries, observer) => {
-    entries.forEach((entry) => {
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry=>{
       if(entry.isIntersecting) {
         entry.target.classList.add('visible')
-      } 
-      // else {
-      //   entry.target.classList.remove('visible')
-      // }
+      }
     })
-  }
-  const observer = new IntersectionObserver(loadImage, {
-    root: null,
-    rootMargin: '0px 0px 0px 0px',
-    threshold: 0.5
   })
-  
-  observer.observe($image1)
-  observer.observe($image2)
-  observer.observe($image3)
-  observer.observe($linkedIn)
-  observer.observe($twitter)
-  observer.observe($github)
 
+  observer.observe(about)
+  projects.forEach(item=>observer.observe(item))
+  observer.observe(logo)
+  observer.observe(logo2)
+  observer.observe(logo3)
+  observer.observe(downArrow)
+  observer.observe(profile)
 }
-export { itemSlide };
+export { topSlide };

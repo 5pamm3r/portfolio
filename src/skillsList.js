@@ -1,4 +1,5 @@
 function skillsList(name, url) {
+  const $list = document.createElement('li');
   const $container = document.createElement("figure");
   $container.classList.add("skill__container");
   const $text = document.createElement("figcaption");
@@ -8,6 +9,7 @@ function skillsList(name, url) {
   $image.alt = name;
 
   $container.append($image, $text);
-  document.getElementById("skillsList").append($container);
+  $list.append($container)
+  document.getElementById("skillsList").append($list);
 }
 export { skillsList };

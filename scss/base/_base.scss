@@ -20,6 +20,12 @@ $h-hide-distance: $h-width + $h-padding;
   --title-project: 3.5rem;
   --subtitle-project: 1.8rem;
   --text-project: 1.4rem;
+  --slide-ms-idx-1: .2s;
+  --slide-ms-idx-2: .4s;
+  --slide-ms-idx-3: .6s;
+  --slide-ms-idx-4: .8s;
+  --slide-ms-idx-5: 1s;
+  --slide-ms-idx-6: 1.2s;
 }
 * {
   box-sizing: border-box;
@@ -38,11 +44,18 @@ body {
 
 @keyframes slide {
   from {
-    opacity: 0;
     transform: translateY(-20px);
   }
   to {
-    opacity: 1;
     transform: translateY(0%);
+  }
+}
+
+@keyframes rightSlide {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: translateX(0%);
   }
 }

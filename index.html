@@ -35,66 +35,83 @@
           <div class="home__description">
             <h1 class="title" id="title">Carlos Massarino</h1>
             <p lang="en" class="home__info" id="homeInfo">
-              I Craft High-Performing 
+              I Craft High-Performing
               <span class="text-red">+</span> <br />
               Accessible
               <span class="text-red">+</span>
               Beautiful Websites
             </p>
-            <p lang="en" class="availability" id="getInTouch">Get in touch for availability.</p>
-            <!-- <img
-              src="./public/assets/images/available-for-work.svg"
-              class="available-for-work"
-            /> -->
-            <div class="main-contact" id="contact"></div>
+            <p lang="en" class="availability" id="getInTouch">
+              Get in touch for availability.
+            </p>
+            <ul class="main-contact" id="contact"></ul>
           </div>
         </div>
-        <a class="arrow-link" href="#about">
+        <a class="arrow-link" href="#about" id="downArrow">
           <img
             class="arrow"
             src="./public/assets/icons/down-arrow.png"
-            alt="down arrow"
+            alt="skip to main content"
           />
         </a>
       </section>
 
       <section class="about" id="about">
-        <p lang="en" class="subtitle">A little about me 👋</p>
-        <p lang="en" class="about__title">Who am I</p>
+        <p lang="en" class="subtitle topSlide">A little about me 👋</p>
+        <p lang="en" class="about__title topSlide">Who am I</p>
         <div class="about__container">
           <div class="text-img__container">
             <img
               src="./public/assets/images/grey-ellipse.svg"
               class="grey-ellipse"
-              alt="eclipse"
+              alt="ellipse"
             />
-            <div class="text-area">
-              <p lang="en" class="itemSlide" id="itemSlide1">
-                Currently I am dedicated to the development of web applications focused on improving performance and user experience.
+            <div class="text-area" id="textArea">
+              <p lang="en" class="topSlide">
+                Currently I am dedicated to the development of web applications
+                focused on improving performance and user experience.
               </p>
-              <p lang="en" class="itemSlide" id="itemSlide2">
-                I am a self-taught person willing to learn and face new challenges that allow me to acquire new tools to enhance my work.
+              <p lang="en" class="topSlide">
+                I am a self-taught person willing to learn and face new
+                challenges that allow me to acquire new tools to enhance my
+                work.
               </p>
-              <p lang="en" class="itemSlide" id="itemSlide3">
-                I specialize in creating interactive experiences using React, Canvas, A11y and Atomic Architecture. I write code and improve my design and english skills every day.
+              <p lang="en" class="topSlide">
+                I specialize in creating interactive experiences using React,
+                Canvas, A11y and Atomic Architecture. I write code and improve
+                my design and english skills every day.
               </p>
               <div class="redline__container">
-                <img src="./public/assets/icons/redline.svg" alt="" />
+                <img src="./public/assets/icons/redline.svg" alt="redline" />
               </div>
               <div class="skills-area">
-                <p lang="en">Skills</p>
-                <div class="skillsList__container notranslate" id="skillsList"></div>
+                <p lang="en" class="skills__subtitle topSlide">Skills</p>
+                <ul
+                  class="skillsList__container notranslate"
+                  id="skillsList"
+                ></ul>
               </div>
             </div>
-            <div class="img-profile">
-              <img src="./public/assets/images/profile.jpg" alt="profile" />
+            <div class="img-profile" id="imgProfile">
+              <img
+                src="./public/assets/images/profile.jpg"
+                alt="profile"
+                loading="lazy"
+              />
+              <img
+                src="./public/assets/images/available-for-work.svg"
+                class="available-for-work"
+                alt="available for work"
+              />
             </div>
           </div>
         </div>
       </section>
       <div class="outline"></div>
 
-      <section id="projects" class="projects"></section>
+      <section class="projects___container">
+        <ul class="projects" id="projects"></ul>
+      </section>
       <section id="faq" class="faq">
         <div class="faq__container">
           <svg
@@ -180,7 +197,9 @@
                       <div>
                         <img src="./public/assets/icons/redline.svg" />
                       </div>
-                      <p lang="en">A full website with 5-10 pages may take 6-8 weeks.</p>
+                      <p lang="en">
+                        A full website with 5-10 pages may take 6-8 weeks.
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -192,7 +211,9 @@
                   <div class="faq-icon"></div>
                   <div class="faq-icon2" id="faqIcon3"></div>
                 </div>
-                <p lang="en" class="faq-question">What services are included?</p>
+                <p lang="en" class="faq-question">
+                  What services are included?
+                </p>
               </div>
               <div class="faq-hidden faq-hid-act" id="faqHidden-item3">
                 <div class="hidden" id="hidden3">
@@ -201,7 +222,9 @@
                       <div>
                         <img src="./public/assets/icons/redline.svg" />
                       </div>
-                      <p lang="en">Domain Registration and Hosting for the first year.</p>
+                      <p lang="en">
+                        Domain Registration and Hosting for the first year.
+                      </p>
                     </li>
                     <li class="redline-container">
                       <div>
@@ -228,8 +251,13 @@
     <footer class="footer__container">
       <div class="footer-text__container">
         <p lang="en">Need a High-Performing Website?</p>
-        <p lang="en" class="notranslate">let's get <span class="text-red">started</span></p>
-        <button class="send-email notranslate" href="mailto:cmassarino.dev@gmail.com">
+        <p lang="en" class="notranslate">
+          let's get <span class="text-red">started</span>
+        </p>
+        <button
+          class="send-email notranslate"
+          href="mailto:cmassarino.dev@gmail.com"
+        >
           <span>send me an email</span>
           <img
             src="./public/assets/icons/button-arrow.svg"
@@ -240,38 +268,48 @@
       </div>
       <div class="footer-contact__container">
         <div class="footer-logo">
-          <img src="./public/assets/icons/logoCM.png" alt="logo" />
+          <img src="./public/assets/icons/logoCM.png" alt="logo CM" />
         </div>
-        <div class="footer-contact" id="footerContact"></div>
+        <ul class="footer-contact" id="footerContact"></ul>
       </div>
     </footer>
 
     <template id="templateContact">
-      <div class="imageContact__container">
+      <li class="imageContact__container">
         <a target="_blank" rel="noopener noreferrer" class="contactLink">
-          <img class="contactImg"/>
+          <img class="contactImg" />
         </a>
-      </div>
+      </li>
     </template>
 
     <template id="templateProjects">
-      <div class="project__container">
+      <li class="project__container">
         <div class="projectDescription__container">
-          <h2 class="project-tag">PROJECT</h2>
+          <h2 class="project-tag projectSlide">PROJECT</h2>
           <div class="projectInfo__container">
-            <h2 id="projectTitle" class="project__title"></h2>
-            <h2 id="projectSubtitle" class="project__subtitle notranslate"></h2>
+            <h2 id="projectTitle" class="project__title projectSlide"></h2>
+            <h2 id="projectSubtitle" class="project__subtitle notranslate projectSlide"></h2>
           </div>
           <div class="description__container">
-            <p lang="en" id="projectDescription" class="project__description"></p>
+            <p
+              lang="en"
+              id="projectDescription"
+              class="project__description projectSlide"
+            ></p>
           </div>
-          <a id="projectLink" href="#" class="explore__link" target="_blank" rel="noopener noreferrer">
+          <a
+            id="projectLink"
+            href="#"
+            class="explore__link projectSlide"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span class="explore">EXPLORE</span>
-            <img src="./public/assets/icons/right-arrow.png" />
+            <img src="./public/assets/icons/right-arrow.png" alt="right arrow" />
           </a>
         </div>
         <div class="video__container">
-          <img id="projectImg" alt="" />
+          <img id="projectImg" alt="project" />
           <video
             autoplay="autoplay"
             loop="loop"
@@ -284,7 +322,7 @@
             <source id="projectVideo" type="video/mp4" />
           </video>
         </div>
-      </div>
+      </li>
     </template>
     <script src="src/index.js" type="module"></script>
     <script src="src/skillsList.js" type="module"></script>

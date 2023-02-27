@@ -70,6 +70,9 @@
       display: flex;
       gap: 20px;
       justify-content: flex-end;
+      .imageContact__container {
+        list-style: none;
+      }
       img {
         width: 40px;
       }

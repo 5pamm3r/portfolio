@@ -115,3 +115,38 @@
     }
   }
 }
+
+@include mqMax(900px) {
+  .projects .project__container {
+    flex-direction: column;
+    .projectDescription__container {
+      width: 100%;
+      .project-tag {
+        display: none;
+      }
+      .projectInfo__container {
+        .project__title {
+          font-size: 4rem;
+        }
+        .project__subtitle {
+          font-size: var(--text-size-xl);
+        }
+      }
+      .description__container {
+        .project__description {
+          width: auto;
+          font-size: var(--text-size-xl);
+        }
+      }
+      .explore__link {
+        display: none;
+      }
+    }
+    .video__container {
+      width: auto;
+      img {
+        display: none;
+      }
+    }
+  }
+}

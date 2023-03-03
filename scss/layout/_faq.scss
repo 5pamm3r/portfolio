@@ -110,7 +110,8 @@
     font-size: var(--faq-title);
   }
 }
-@include mqMax(425px) {
+
+@include mqMax(700px) {
   .faq .faq__container {
     .faq-title {
       font-size: var(--faq-title-mobile);
@@ -121,15 +122,20 @@
       }
       .faq-hid-act {
         font-size: var(--faq-text-mobile);
+        
+      }
+    }
+  }
+}
+@include mqMax(500px) {
+  .faq .faq__container {
+    .faq-item__container .faq-item {
+      .faq-hid-act {
         padding-left: 40px;
         div p {
           margin-bottom: 5px;
         }
-        
       }
-      // #faqHidden-item1.faq-visible {
-      //   margin-bottom: 20px;
-      // }
     }
   }
 }

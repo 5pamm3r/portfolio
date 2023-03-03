@@ -15,12 +15,30 @@ $h-hide-distance: $h-width + $h-padding;
 :root {
   --backgroundColor: #1f1d36;
   --padding-left-right: calc((100vw + 80px) / 21);
+  --title-xl: 10rem;
+  --title-tablet: 8rem;
+  --title-mobile: 6rem; 
+  --subtitle-xl:  4rem;
+  --subtitle-tablet: 3rem;
+  --subtitle-mobile: 2.5rem;
   --subtitle: 2rem;
   --text-size: 2.2rem;
   --text-size-xl: 2.3rem;
+  --text-size-tablet: 2.1rem;
+  --text-size-mobile: 1.8rem;
   --title-project: 3.5rem;
+  --title-project-mobile: 3rem;
   --subtitle-project: 1.8rem;
   --text-project: 1.4rem;
+  --faq-title: 7rem;
+  --faq-question: 3rem;
+  --faq-text: 1.5rem;
+  --faq-title-mobile: 5rem;
+  --faq-question-mobile: 2.3rem;
+  --faq-text-mobile: 1.3rem;
+
+  --footer-subtitle: 6rem;
+  --footer-subtitle-mobile: 4rem;
   --slide-ms-idx-1: .2s;
   --slide-ms-idx-2: .4s;
   --slide-ms-idx-3: .6s;
@@ -76,5 +94,15 @@ abbr[title] {
   }
   to {
     transform: translateX(0%);
+  }
+}
+
+@keyframes faqSlide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    // transition: opacity 1s .3s;
   }
 }

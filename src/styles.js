@@ -1,13 +1,23 @@
 function styles() {
   document.getElementById("faq-accordion1").addEventListener("click", (e) => {
     const container = document.getElementById("faqHidden-item1");
+    const windowWidth = window.innerWidth;
     if (container.classList.contains("faq-hidden")) {
       container.classList.remove("faq-hidden");
       container.classList.add("faq-visible");
       document.getElementById("faqIcon1").classList.add("active");
       document.getElementById("sect1").classList.add("active");
       document.getElementById("sect1").removeAttribute("hidden");
-      document.getElementById("faqHidden-item1").style.height = '200px'
+      if(windowWidth >= 720) {
+        document.getElementById("faqHidden-item1").style.height = '200px'
+      } else if(windowWidth >= 505 && windowWidth < 720 ) {
+        document.getElementById("faqHidden-item1").style.height = '250px'
+      } else if(windowWidth > 425 && windowWidth < 505){
+        document.getElementById("faqHidden-item1").style.height = '300px'
+      }
+      setTimeout(() => {
+        document.getElementById('sect1').style.opacity = '1';
+      }, 320);
       if(window.innerWidth < 380) {
         const boxSize = document.getElementById('sect1').clientHeight;
         setTimeout(() => {

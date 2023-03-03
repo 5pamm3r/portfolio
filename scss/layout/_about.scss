@@ -190,20 +190,30 @@
 @include mqMax(425px) {
   .about {
     overflow-x: hidden;
-    .about__container .text-img__container .text-area {
-      max-width: none;
-      font-size: var(--text-size-mobile);
-      .skills-area {
+    .about__container .text-img__container {
+      .img-profile {
+        width: 250px;
+        .available-for-work {
+          width: 140px;
+          top: -40px;
+          right: -25px;
+        }
+      }
+      .text-area {
+        max-width: none;
         font-size: var(--text-size-mobile);
-        .skillsList__container {
-          display: grid;
+        .skills-area {
           font-size: var(--text-size-mobile);
-          grid-template-columns: repeat(5, 1fr);
-          img {
-            width: 35px;
-          }
-          figcaption {
-            font-size: 1.2rem;
+          .skillsList__container {
+            display: grid;
+            font-size: var(--text-size-mobile);
+            grid-template-columns: repeat(5, 1fr);
+            img {
+              width: 35px;
+            }
+            figcaption {
+              font-size: 1.2rem;
+            }
           }
         }
       }

@@ -33,8 +33,7 @@ const getProject = (() => {
     'Do you feel that money flies? To optimize expenses, it is important to know what is spent on. There is only one way to do it and that is to keep track of expenses.',
     'https://5pamm3r.github.io/portfolio/public/assets/images/cryptoWallet.png',
     'https://5pamm3r.github.io/portfolio/public/assets/videos/expenseTracker-video.mp4',
-    'https://github.com/5pamm3r/expense-tracker'
-
+    'https://5pamm3r.github.io/expense-tracker',
   )
   projects(
     'Umbrella',
@@ -42,7 +41,7 @@ const getProject = (() => {
     'Are you worried about the weather? In this app you will find basic information such as the current weather situation, as well as the forecast for days or hours.',
     'https://5pamm3r.github.io/portfolio/public/assets/images/umbrella.png',
     'https://5pamm3r.github.io/portfolio/public/assets/videos/umbrella-video.mp4',
-    'https://github.com/5pamm3r/umbrella'
+    'https://5pamm3r.github.io/umbrella/',
 
     
   )
@@ -52,7 +51,7 @@ const getProject = (() => {
     'Organize effectively and say goodbye to stress. Plan, manage and control all your tasks in an application that will improve your efficiency at work and in your personal life.',
     'https://5pamm3r.github.io/portfolio/public/assets/images/featherPens.png',
     'https://5pamm3r.github.io/portfolio/public/assets/videos/video-wishlist.mp4',
-    'https://github.com/5pamm3r/wish-list'
+    'https://5pamm3r.github.io/wish-list',
   )
   project.append(fragmentProject)
 })();

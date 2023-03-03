@@ -187,7 +187,7 @@
   }
 }
 
-@include mqMax(425px) {
+@include mqMax(630px) {
   .about {
     overflow-x: hidden;
     .about__container .text-img__container {
@@ -207,7 +207,7 @@
           .skillsList__container {
             display: grid;
             font-size: var(--text-size-mobile);
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(6, 1fr);
             img {
               width: 35px;
             }
@@ -224,5 +224,11 @@
     .about__title {
       font-size: var(--title-mobile);
     }
+  }
+}
+
+@include mqMax(400px) {
+  .about .about__container .text-img__container .text-area .skills-area .skillsList__container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

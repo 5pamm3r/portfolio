@@ -127,3 +127,28 @@
     }
   }
 }
+
+@include mqMax(375px) {
+  .footer__container .footer-text__container {
+    p:nth-child(1) {
+      font-size: var(--text-size-mobile-M);
+    }
+    p:nth-child(2) {
+      font-size: var(--footer-subtitle-mobile-M);
+    }
+    .send-email {
+      width: 120px;
+      height: 35px;
+      span {
+        top: 35%;
+        font-size: .9rem;
+      }
+      .arrow-img {
+        width: 8px;
+      }
+      &:hover .arrow-img {
+        transform: translateY(-10px);
+      }
+    }
+  }
+}

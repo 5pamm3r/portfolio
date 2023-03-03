@@ -4,8 +4,8 @@
   padding-bottom: 100px;
   .faq__container {
     overflow-x: hidden;
-    .faq-subtitle {
-      font-size: 7rem;
+    .faq-title {
+      font-size: var(--faq-title);
       text-transform: uppercase;
       color: transparent;
       -webkit-text-stroke: 1.5px #735c73;
@@ -44,30 +44,32 @@
             }
           }
           .faq-question {
-            font-size: 3rem;
+            font-size: var(--faq-question);
             font-weight: bold;
             cursor: pointer;
+
+            background: transparent;
+            border: none;
+            color: white;
+            text-align: inherit;
           }
         }
         .faq-hid-act {
           padding-top: 40px;
           padding-left: 90px;
-          font-size: 1.5rem;
+          font-size: var(--faq-text);
           line-height: 1.8;
           &.faq-hidden {
             overflow: hidden;
             height: 20px;
-            transition: height .3s 230ms;
-            .hidden {
-              opacity: 0;
-              transition: opacity .5s .2s;
-            }
-          } 
+            transition: height 0.3s 230ms;
+          }
           &.faq-visible {
-            transition: height .3s 230ms;
+            transition: height 0.3s 230ms;
             .active {
-              opacity: 1;
-              transition: opacity 1s .3s;
+              opacity: 0;
+              animation: faqSlide 1s .3s;
+              transition: opacity 1s .3s; 
             }
           }
           div {
@@ -98,6 +100,35 @@
         &:nth-child(3) {
           border-bottom: none;
         }
+      }
+    }
+  }
+}
+
+@include mqMax(1024px) {
+  .faq .faq__container .faq-title {
+    font-size: var(--faq-title);
+  }
+}
+@include mqMax(425px) {
+  .faq .faq__container {
+    .faq-title {
+      font-size: var(--faq-title-mobile);
+    }
+    .faq-item__container .faq-item {
+      .faq-title__container .faq-question {
+        font-size: var(--faq-question-mobile);
+      }
+      .faq-hid-act {
+        font-size: var(--faq-text-mobile);
+        padding-left: 40px;
+        div p {
+          margin-bottom: 5px;
+        }
+        
+      }
+      #faqHidden-item1.faq-visible {
+        margin-bottom: 20px;
       }
     }
   }

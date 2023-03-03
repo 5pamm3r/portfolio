@@ -126,7 +126,7 @@
       }
       .projectInfo__container {
         .project__title {
-          font-size: 4rem;
+          font-size: var(--title-project);
         }
         .project__subtitle {
           font-size: var(--text-size-xl);
@@ -147,6 +147,34 @@
       img {
         display: none;
       }
+    }
+  }
+}
+
+@include mqMax(1024px) {
+  .projects {
+    margin-top: 0;
+  }
+}
+
+@include mqMax(768px) {
+  .projects .project__container .projectDescription__container .description__container .project__description {
+    font-size: var(--text-size-tablet);
+  }
+}
+
+@include mqMax(425px) {
+  .projects .project__container .projectDescription__container {
+    .projectInfo__container {
+      .project__title {
+        font-size: var(--title-project-mobile);
+      }
+      .project__subtitle {
+        font-size: var(--text-size-mobile);
+      }
+    }
+    .description__container .project__description {
+      font-size: var(--text-size-mobile);
     }
   }
 }

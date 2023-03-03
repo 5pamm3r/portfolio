@@ -8,9 +8,17 @@ function styles() {
       document.getElementById("sect1").classList.add("active");
       document.getElementById("sect1").removeAttribute("hidden");
       document.getElementById("faqHidden-item1").style.height = '200px'
-      setTimeout(() => {
-        document.getElementById('sect1').style.opacity = '1';
-      }, 300);
+      if(window.innerWidth < 380) {
+        const boxSize = document.getElementById('sect1').clientHeight;
+        setTimeout(() => {
+          document.getElementById('sect1').style.opacity = '1';
+          document.getElementById("faqHidden-item1").style.removeProperty('height')
+        }, 320);
+        setTimeout(() => {
+          document.getElementById("faqHidden-item1").style.height = `${boxSize + 40}px`
+          
+        }, 350);
+      }
     } else {
       container.classList.remove("faq-visible");
       container.classList.add("faq-hidden");

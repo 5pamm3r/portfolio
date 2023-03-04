@@ -8,26 +8,13 @@ function styles() {
       document.getElementById("faqIcon1").classList.add("active");
       document.getElementById("sect1").classList.add("active");
       document.getElementById("sect1").removeAttribute("hidden");
-      if(windowWidth >= 720) {
-        document.getElementById("faqHidden-item1").style.height = '200px'
-      } else if(windowWidth >= 505 && windowWidth < 720 ) {
-        document.getElementById("faqHidden-item1").style.height = '250px'
-      } else if(windowWidth > 425 && windowWidth < 505){
-        document.getElementById("faqHidden-item1").style.height = '300px'
-      }
       setTimeout(() => {
         document.getElementById('sect1').style.opacity = '1';
       }, 320);
-      if(window.innerWidth < 380) {
-        const boxSize = document.getElementById('sect1').clientHeight;
-        setTimeout(() => {
-          document.getElementById('sect1').style.opacity = '1';
-          document.getElementById("faqHidden-item1").style.removeProperty('height')
-        }, 320);
-        setTimeout(() => {
-          document.getElementById("faqHidden-item1").style.height = `${boxSize + 40}px`
-          
-        }, 350);
+      if(windowWidth >= 720) {
+        document.getElementById("faqHidden-item1").style.height = '200px'
+      } else if(windowWidth < 720 ) {
+        document.getElementById("faqHidden-item1").style.height = '250px'
       }
     } else {
       container.classList.remove("faq-visible");

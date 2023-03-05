@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://5pamm3r.github.io/portfolio/public/assets/icons/favicon.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,21 +15,14 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="header">
-      <!-- <nav>
-        <ul class="header__list">
-          <li class="header__links"><a href="#about">About</a></li>
-          <li class="header__links"><a href="#projects">Projects</a></li>
-          <li class="header__links"><a href="#">Contact</a></li>
-        </ul>
-      </nav> -->
-      <!-- <div class="hamburger">
+    <!-- <header class="header">
+      <div class="hamburger" id="hamburger">
         <div class="hamburger__container">
           <div class="hamburger__inner"></div>
           <div class="hamburger__hidden"></div>
         </div>
-      </div> -->
-    </header>
+      </div>
+    </header> -->
     <main class="main">
       <section class="home" id="home">
         <div class="profile__container">
@@ -47,7 +41,7 @@
             <ul class="main-contact" id="contact"></ul>
           </div>
         </div>
-        <a class="arrow-link" href="#about" id="downArrow">
+        <a class="arrow-link" href="#about" id="downArrow" tabindex="1">
           <img
             class="arrow"
             src="https://5pamm3r.github.io/portfolio/public/assets/icons/down-arrow.png"
@@ -56,18 +50,14 @@
         </a>
       </section>
 
-      <section class="about" id="about">
+      <section class="about" id="about" aria-labelledby="aboutSec">
+        <span id="aboutSec" class="hide-a11y">About me section</span>
         <p lang="en" class="subtitle topSlide">
           A little about me <span aria-hidden="true">👋</span>
         </p>
         <p lang="en" class="about__title topSlide">Who am I</p>
         <div class="about__container">
           <div class="text-img__container">
-            <!-- <img
-              src="https://5pamm3r.github.io/portfolio/public/assets/images/grey-ellipse.svg"
-              class="grey-ellipse"
-              alt=""
-            /> -->
             <div class="text-area" id="textArea">
               <p lang="en" class="topSlide">
                 Currently I am dedicated to the development of web applications
@@ -80,7 +70,7 @@
               </p>
               <p lang="en" class="topSlide">
                 I specialize in creating interactive experiences using React,
-                Canvas, <abbr title="Accesibility">A11y</abbr> and Atomic
+                Canvas, <abbr lang="en" title="Accesibility">A11y</abbr> and Atomic
                 Architecture. I write code and improve my design and english
                 skills every day.
               </p>
@@ -120,10 +110,13 @@
       </section>
       <div class="outline"></div>
 
-      <section class="projects___container">
-        <ul class="projects" id="projects"></ul>
+      <section class="projects___container" aria-labelledby="projectSec">
+        <span id="projectSec" class="hide-a11y">Projects section</span>
+        <ul class="projects" id="projects">
+        </ul>
       </section>
-      <section id="faq" class="faq">
+      <section id="faq" class="faq" aria-labelledby="faqSec">
+        <span id="faqSec" class="hide-a11y">frequently asked questions section</span>
         <div class="faq__container">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -159,8 +152,9 @@
                   >
                     <span>
                       How much does it cost to get started with a
-                      high-performing website?
+                      high-performing website?<span class="hide-a11y">Press for more information</span>
                     </span>
+
                   </button>
                 </h3>
               </div>
@@ -207,8 +201,9 @@
                     aria-controls="sect2"
                   >
                     <span
-                      >How long will the work take from start to finish?</span
+                      >How long will the work take from start to finish?<span class="hide-a11y">Press for more information</span></span
                     >
+                   
                   </button>
                 </h3>
               </div>
@@ -254,7 +249,7 @@
                     aria-controls="sect3"
                     aria-expanded="false"
                   >
-                    <span>What services are included?</span>
+                    <span>What services are included?<span class="hide-a11y">Press for more information</span></span>
                   </button>
                 </h3>
               </div>
@@ -303,15 +298,13 @@
         <p lang="en" class="notranslate">
           let's get <span class="text-red">started</span>
         </p>
-        <a href="mailto:cmassarino.dev@gmail.com">
-          <button class="send-email notranslate">
+        <a href="mailto:cmassarino.dev@gmail.com" class="send-email notranslate"> 
             <span>send me an email</span>
             <img
               src="https://5pamm3r.github.io/portfolio/public/assets/icons/button-arrow.svg"
-              alt="arrow"
+              alt=""
               class="arrow-img"
             />
-          </button>
         </a>
       </div>
       <div class="footer-contact__container">
@@ -338,35 +331,32 @@
         <div class="projectDescription__container">
           <h2 class="project-tag projectSlide">PROJECT</h2>
           <div class="projectInfo__container">
-            <h2 id="projectTitle" class="project__title projectSlide"></h2>
+            <h2  class="project__title projectSlide notranslate"></h2>
             <h2
-              id="projectSubtitle"
               class="project__subtitle notranslate projectSlide"
             ></h2>
           </div>
           <div class="description__container">
             <p
               lang="en"
-              id="projectDescription"
               class="project__description projectSlide"
             ></p>
           </div>
           <a
-            id="projectLink"
-            href="#"
             class="explore__link projectSlide"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Go to project"
           >
-            <span class="explore">EXPLORE</span>
+            <span class="explore">EXPLORE <span class="hide-a11y"></span></span>
             <img
               src="https://5pamm3r.github.io/portfolio/public/assets/icons/right-arrow.png"
-              alt="right arrow"
+              alt=""
             />
           </a>
         </div>
-        <a class="video__container" id="videoLink" target="_blank" rel="noopener noreferrer">
-          <img id="projectImg" alt="project" />
+        <a class="video__container" target="_blank" rel="noopener noreferrer" aria-label="Go to project">
+          <img class="project__img" alt="project" />
           <video
             autoplay="autoplay"
             loop="loop"
@@ -374,9 +364,8 @@
             defaultMuted
             playsinline
             preload="auto"
-            id="miVideo"
           >
-            <source id="projectVideo" type="video/mp4" />
+            <source class="project__video" type="video/mp4" />
           </video>
         </a>
       </li>

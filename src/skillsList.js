@@ -6,7 +6,7 @@ function skillsList(name, url) {
   $text.textContent = name;
   const $image = document.createElement("img");
   $image.src = url;
-  $image.alt = name;
+  $image.alt = '';
 
   $container.append($image, $text);
   $list.append($container)

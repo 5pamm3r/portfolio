@@ -10,17 +10,23 @@ const getContact = (id) => {
   contactContainer(
     "linkedInContact",
     "https://www.linkedin.com/in/carlos-massarino-9970b1234/",
-    "https://5pamm3r.github.io/portfolio/public/assets/icons/linkedin-black.svg"
+    "https://5pamm3r.github.io/portfolio/public/assets/icons/linkedin-black.svg",
+    'LinkedIn',
+    'Go to LinkedIn'
   );
   contactContainer(
     "twitterContact",
     "https://twitter.com/C_Massarino",
-    "https://5pamm3r.github.io/portfolio/public/assets/icons/twitter-black.svg"
+    "https://5pamm3r.github.io/portfolio/public/assets/icons/twitter-black.svg",
+    'Twitter',
+    'Go to Twitter'
   );
   contactContainer(
     "githubContact",
     "https://github.com/5pamm3r",
-    "https://5pamm3r.github.io/portfolio/public/assets/icons/github.png"
+    "https://5pamm3r.github.io/portfolio/public/assets/icons/github.png",
+    'GitHub',
+    'Go to GitHub'
   );
   contact.append(fragment);
 };
@@ -42,7 +48,7 @@ const getProject = (() => {
     'https://5pamm3r.github.io/portfolio/public/assets/images/umbrella.png',
     'https://5pamm3r.github.io/portfolio/public/assets/videos/umbrella-video.mp4',
     'https://5pamm3r.github.io/umbrella/',
-
+    'id2'
     
   )
   projects(
@@ -52,6 +58,7 @@ const getProject = (() => {
     'https://5pamm3r.github.io/portfolio/public/assets/images/featherPens.png',
     'https://5pamm3r.github.io/portfolio/public/assets/videos/video-wishlist.mp4',
     'https://5pamm3r.github.io/wish-list',
+    'id3'
   )
   project.append(fragmentProject)
 })();
@@ -61,7 +68,15 @@ const getSkills = () => {
     skillsList(e.name, e.icon)
   })
 }
-
+// document.getElementById('hamburger').addEventListener('click', e=>{
+//   const status = document.getElementById('hamburger').classList.contains('is-active')
+//   if(!status) {
+//     document.getElementById('hamburger').classList.add('is-active')
+//   }else {
+//     document.getElementById('hamburger').classList.remove('is-active')
+//   }
+  
+// })
 getContact('#contact')
 getContact('#footerContact')
 getSkills()

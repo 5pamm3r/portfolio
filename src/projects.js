@@ -1,15 +1,15 @@
 const fragmentProject = document.createDocumentFragment();
 
 const projects = (title, subtitle, description, image, video, link) => {
-  const projectsContainer = document.getElementById("templateProjects").content;
-  projectsContainer.getElementById("projectTitle").textContent = title;
-  projectsContainer.getElementById("projectSubtitle").textContent = subtitle;
-  projectsContainer.getElementById("projectDescription").textContent = description;
-  projectsContainer.getElementById("projectImg").src = image;
-  projectsContainer.getElementById("projectVideo").src = video;
-  projectsContainer.getElementById("projectLink").href = link;
-  projectsContainer.getElementById("videoLink").href = link;
-
+  const projectsContainer = document.querySelector("#templateProjects").content;
+  projectsContainer.querySelector(".project__title").textContent = title;
+  projectsContainer.querySelector(".project__subtitle").textContent = subtitle;
+  projectsContainer.querySelector(".project__description").textContent = description;
+  projectsContainer.querySelector(".project__img").src = image;
+  projectsContainer.querySelector(".project__video").src = video;
+  projectsContainer.querySelectorAll('a').forEach(e=>{
+    e.href = link;
+  });
   const clone = document.importNode(projectsContainer, true);
   fragmentProject.append(clone);
 };

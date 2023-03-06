@@ -1,6 +1,6 @@
 ## Welcome to my personal portfolio 👋
 
-### :tw-1f4ce: **Take a look:** [Portfolio](https://5pamm3r.github.io/portfolio/ "Portfolio")
+### 🔗 **Take a look:** [Portfolio](https://5pamm3r.github.io/portfolio/ "Portfolio")
 
 ### **Features **
 - Minimal Design

@@ -2,7 +2,7 @@
 
 ### 🔗 **Take a look:** [Portfolio](https://5pamm3r.github.io/portfolio/ "Portfolio")
 
-### **Features **
+### Features
 - Minimal Design
 - Fully Responsive
 - Accessible

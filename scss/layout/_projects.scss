@@ -8,7 +8,7 @@
     align-items: center;
     padding: 80px 0;
     border-bottom: 1px solid #ccc;
-    &:nth-child(3) {
+    &:nth-child(4) {
       border: none;
     }
     .projectDescription__container {
@@ -60,6 +60,26 @@
         }
         margin-bottom: 30px;
       }
+      .explore__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        opacity: 0;
+        &.visible {
+          opacity: 1;
+          transition: opacity 1s var(--slide-ms-idx-5);
+          animation: slide .5s var(--slide-ms-idx-5);
+        }
+        .explore {
+          font-size: 1.5rem;
+          color: darkgray;
+        }
+        img {
+          margin-left: 20px;
+          width: 30px;
+          height: 30px;
+        }
+      }
     }
     .video__container {
       position: relative;
@@ -67,11 +87,11 @@
       height: fit-content;
       border-radius: 20px;
       // border: 3px solid black;
-      img {
+      .project__img {
         position: absolute;
-        width: 35%;
-        left: -12%;
-        bottom: -30px;
+        // width: 35%;
+        // left: -12%;
+        // bottom: -30px;
       }
       video {
         width: 100%;
@@ -79,40 +99,21 @@
         border-radius: 20px;
       }
     }
-
-    .explore__link {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      opacity: 0;
-      &.visible {
-        opacity: 1;
-        transition: opacity 1s var(--slide-ms-idx-5);
-        animation: slide .5s var(--slide-ms-idx-5);
-      }
-      .explore {
-        font-size: 1.5rem;
-        color: darkgray;
-      }
-      img {
-        margin-left: 20px;
-        width: 30px;
-        height: 30px;
-      }
-    }
     &:nth-child(2) .video__container img {
+        width: 33%;
+        left: -12%;
+        bottom: -30px;
+    }
+    &:nth-child(3) .video__container img {
       width: 13%;
       left: -5%;
       bottom: -20px;
       transform: rotate(-10deg);
     }
-    &:nth-child(3) .video__container {
-      border: none;
-      img {
+    &:nth-child(4) .video__container img {
         width: 16%;
         left: -7%;
         bottom: -30px;
-      }
     }
   }
 }

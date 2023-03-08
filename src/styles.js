@@ -1,8 +1,11 @@
+//Mejorar
+
 function styles() {
   document.getElementById("faq-accordion1").addEventListener("click", (e) => {
     const container = document.getElementById("faqHidden-item1");
     const windowWidth = window.innerWidth;
     if (container.classList.contains("faq-hidden")) {
+      document.getElementById('faq-accordion1').setAttribute('aria-expanded', 'true')
       container.classList.remove("faq-hidden");
       container.classList.add("faq-visible");
       document.getElementById("faqIcon1").classList.add("active");
@@ -17,6 +20,7 @@ function styles() {
         document.getElementById("faqHidden-item1").style.height = '250px'
       }
     } else {
+      document.getElementById('faq-accordion1').setAttribute('aria-expanded', 'false')
       container.classList.remove("faq-visible");
       container.classList.add("faq-hidden");
       document.getElementById("faqIcon1").classList.remove("active");
@@ -33,6 +37,7 @@ function styles() {
   document.getElementById("faq-accordion2").addEventListener("click", (e) => {
     const container = document.getElementById("faqHidden-item2");
     if (container.classList.contains("faq-hidden")) {
+      document.getElementById('faq-accordion2').setAttribute('aria-expanded', 'true')
       container.classList.remove("faq-hidden");
       container.classList.add("faq-visible");
       document.getElementById("faqIcon2").classList.add("active");
@@ -45,6 +50,7 @@ function styles() {
       }, 300);
 
     } else {
+      document.getElementById('faq-accordion2').setAttribute('aria-expanded', 'false')
       container.classList.remove("faq-visible");
       container.classList.add("faq-hidden");
       document.getElementById("faqIcon2").classList.remove("active");
@@ -61,6 +67,7 @@ function styles() {
   document.getElementById("faq-accordion3").addEventListener("click", (e) => {
     const container = document.getElementById("faqHidden-item3");
     if (container.classList.contains("faq-hidden")) {
+      document.getElementById('faq-accordion3').setAttribute('aria-expanded', 'true')
       container.classList.remove("faq-hidden");
       container.classList.add("faq-visible");
       document.getElementById("faqIcon3").classList.add("active");
@@ -71,6 +78,7 @@ function styles() {
         document.getElementById('sect3').style.opacity = '1';
       }, 300);
     } else {
+      document.getElementById('faq-accordion3').setAttribute('aria-expanded', 'false')
       container.classList.remove("faq-visible");
       container.classList.add("faq-hidden");
       document.getElementById("faqIcon3").classList.remove("active");

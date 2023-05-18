@@ -109,3 +109,47 @@
     }
   }
 }
+
+@include mqMax(900px) {
+  .home {
+    a {
+      text-decoration: underline;
+    }
+    .home__title {
+      font-size: 7rem;
+    }
+    .homeDescription__container {
+      .homeInfo__container {
+      }
+    }
+  }
+}
+
+@include mqMax(550px) {
+  .home {
+    a {
+      text-decoration: underline;
+    }
+    .home__title {
+      font-size: 55px;
+    }
+    .homeDescription__container {
+      flex-direction: column;
+      gap: 20px;
+      .homeInfo__container {
+        .shift-line .home-subtitle {
+          font-size: 2rem;
+          line-height: 1.5;
+        }
+      }
+      .homeContact__container {
+        .contact-text {
+          font-size: 1.5rem;
+        }
+        .home__contact {
+          display: none;
+        }
+      }
+    }
+  }
+}

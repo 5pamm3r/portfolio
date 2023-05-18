@@ -4,99 +4,110 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="https://5pamm3r.github.io/portfolio/public/assets/icons/favicon.png"/>
+    <link rel="stylesheet" href="./public/css/main.min.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://5pamm3r.github.io/portfolio/public/assets/icons/favicon.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,800;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./public/css/main.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/graphik" rel="stylesheet" />
     <title>Portfolio</title>
   </head>
   <body>
-    <!-- <header class="header">
-      <div class="hamburger" id="hamburger">
-        <div class="hamburger__container">
-          <div class="hamburger__inner"></div>
-          <div class="hamburger__hidden"></div>
-        </div>
-      </div>
-    </header> -->
     <main class="main">
       <section class="home" id="home">
-        <div class="profile__container">
-          <div class="home__description">
-            <h1 class="title" id="title">Carlos Massarino</h1>
-            <p lang="en" class="home__info" id="homeInfo">
-              I Craft High-Performing
-              <span class="text-red">+</span> <br />
-              Accessible
-              <span class="text-red">+</span>
-              Beautiful Websites
-            </p>
-            <p lang="en" class="availability" id="getInTouch">
-              Get in touch for availability.
-            </p>
-            <ul class="main-contact" id="contact"></ul>
+        <h1 class="home__title">
+          Carlos <br />
+          Massarino
+        </h1>
+        <div class="homeDescription__container">
+          <div class="homeInfo__container">
+            <a class="link-contact" href="mailto:contact@cmassarino.dev">
+              <span class="email-contact">contact@cmassarino.dev</span>
+            </a>
+            <div>
+              <div class="shift-line">
+                <span class="home-subtitle slide">/Frontend Developer</span>
+              </div>
+            </div>
+            <div>
+              <div class="shift-line">
+                <span class="home-subtitle slide">/UX-UI Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="homeContact__container">
+            <div>
+              <p class="contact-text">TypeScript - React - NextJs.</p>
+              <p id="country" class="contact-text">Based in Salto, UY</p>
+              <p class="contact-text">Get in touch for availability.</p>
+            </div>
+            <div class="home__contact">
+              <a
+                class="social-link"
+                href="https://www.linkedin.com/in/cmassarino/"
+              >
+                LinkedIn
+              </a>
+              <a class="social-link" href="mailto:cmassarino.dev@gmail.com"
+                >Gmail</a
+              >
+              <a class="social-link" href="https://github.com/5pamm3r"
+                >GitHub</a
+              >
+              <a class="social-link" href="https://twitter.com/C_Massarino"
+                >Twitter</a
+              >
+            </div>
           </div>
         </div>
-        <a class="arrow-link" href="#about" id="downArrow" tabindex="1">
-            <span class="skip-link">Skip to main content</span>
-            <img
-            class="arrow"
-            src="https://5pamm3r.github.io/portfolio/public/assets/icons/down-arrow.png"
-            alt=""
-          />
-        </a>
       </section>
 
       <section class="about" id="about" aria-labelledby="aboutSec">
         <h2 id="aboutSec" class="offscreen">About me section</h2>
-        <p lang="en" class="subtitle topSlide">
-          A little about me <span aria-hidden="true">👋</span>
-        </p>
-        <p lang="en" class="about__title topSlide">Who am I</p>
         <div class="about__container">
           <div class="text-img__container">
             <div class="text-area" id="textArea">
-              <p lang="en" class="topSlide">
-                Currently I am dedicated to the development of web applications
-                focused on improving performance and user experience.
+              <p lang="en" class="subtitle topSlide">
+                A little about me <span aria-hidden="true">👋</span>
               </p>
-              <p lang="en" class="topSlide">
-                I am a self-taught person willing to learn and face new
-                challenges that allow me to acquire new tools to enhance my
-                work.
+              <p lang="en" class="about__title topSlide">Who am I</p>
+              <p lang="en" class="topSlide text">
+                I am a Frontend Developer focused on improving the performance
+                and user experience in my web applications. I am a self-taught
+                person willing to learn and face new challenges that allow me to
+                acquire new tools to enhance my work.
               </p>
-              <p lang="en" class="topSlide">
-                I specialize in creating interactive experiences using React,
-                Canvas, <abbr lang="en" title="Accesibility">A11y</abbr> and Atomic
-                Architecture. I write code and improve my design and english
-                skills every day.
+              <p lang="en" class="topSlide text">
+                I specialize in creating accessible and user-friendly interfaces
+                using technologies such as JavaScript, TypeScript, React,
+                Next.js, <abbr lang="en" title="Accesibility">A11y</abbr>, and
+                Node.js.
               </p>
-              <div class="redline__container">
+              <p lang="en" class="topSlide text">
+                I write code and improve my design and English skills every day.
+              </p>
+              <a
+                href="mailto:cmassarino.dev@gmail.com"
+                class="send-email notranslate"
+              >
+                <span>send me an email</span>
                 <img
-                  src="https://5pamm3r.github.io/portfolio/public/assets/icons/redline.svg"
+                  src="https://5pamm3r.github.io/portfolio/public/assets/icons/button-arrow.svg"
                   alt=""
+                  class="arrow-img"
                 />
-              </div>
-              <div class="skills-area">
-                <p lang="en" class="skills__subtitle topSlide">Skills</p>
-                <ul
-                  class="skillsList__container notranslate"
-                  id="skillsList"
-                ></ul>
-              </div>
-              <img
-                src="https://5pamm3r.github.io/portfolio/public/assets/images/grey-ellipse.svg"
-                class="grey-ellipse"
-                alt=""
-              />
+              </a>
             </div>
             <div class="img-profile" id="imgProfile">
               <img
-                src="https://5pamm3r.github.io/portfolio/public/assets/images/profile.jpg"
+                src="./public/assets/images/imgProfile.jpg"
                 alt="profile"
                 loading="lazy"
               />
@@ -109,17 +120,21 @@
           </div>
         </div>
       </section>
-      <div class="outline"></div>
-
       <a class="skip-link" href="#project">Skip to project content</a>
-      <section class="projects___container" aria-labelledby="projectSec" id="project">
+      <section
+        class="projects___container"
+        aria-labelledby="projectSec"
+        id="project"
+      >
         <ul class="projects" id="projects">
           <h2 id="projectSec" class="offscreen">Projects section</h2>
         </ul>
       </section>
       <a class="skip-link" href="#faq">Skip to frequently asked questions </a>
       <section id="faq" class="faq" aria-labelledby="faqSec">
-        <span id="faqSec" class="offscreen">frequently asked questions section</span>
+        <span id="faqSec" class="offscreen"
+          >frequently asked questions section</span
+        >
         <div class="faq__container">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -155,9 +170,10 @@
                   >
                     <span>
                       How much does it cost to get started with a
-                      high-performing website?<span class="offscreen">Press for more information</span>
+                      high-performing website?<span class="offscreen"
+                        >Press for more information</span
+                      >
                     </span>
-
                   </button>
                 </h3>
               </div>
@@ -204,9 +220,11 @@
                     aria-controls="sect2"
                   >
                     <span
-                      >How long will the work take from start to finish?<span class="offscreen">Press for more information</span></span
+                      >How long will the work take from start to finish?<span
+                        class="offscreen"
+                        >Press for more information</span
+                      ></span
                     >
-                   
                   </button>
                 </h3>
               </div>
@@ -252,7 +270,11 @@
                     aria-controls="sect3"
                     aria-expanded="false"
                   >
-                    <span>What services are included?<span class="offscreen">Press for more information</span></span>
+                    <span
+                      >What services are included?<span class="offscreen"
+                        >Press for more information</span
+                      ></span
+                    >
                   </button>
                 </h3>
               </div>
@@ -303,13 +325,16 @@
         <p lang="en" class="notranslate">
           let's get <span class="text-red">started</span>
         </p>
-        <a href="mailto:cmassarino.dev@gmail.com" class="send-email notranslate"> 
-            <span>send me an email</span>
-            <img
-              src="https://5pamm3r.github.io/portfolio/public/assets/icons/button-arrow.svg"
-              alt=""
-              class="arrow-img"
-            />
+        <a
+          href="mailto:cmassarino.dev@gmail.com"
+          class="send-email notranslate"
+        >
+          <span>send me an email</span>
+          <img
+            src="https://5pamm3r.github.io/portfolio/public/assets/icons/button-arrow.svg"
+            alt=""
+            class="arrow-img"
+          />
         </a>
       </div>
       <div class="footer-contact__container">
@@ -336,16 +361,11 @@
         <div class="projectDescription__container">
           <h2 class="project-tag projectSlide">PROJECT</h2>
           <div class="projectInfo__container">
-            <h2  class="project__title projectSlide notranslate"></h2>
-            <h2
-              class="project__subtitle notranslate projectSlide"
-            ></h2>
+            <h2 class="project__title projectSlide notranslate"></h2>
+            <h2 class="project__subtitle notranslate projectSlide"></h2>
           </div>
           <div class="description__container">
-            <p
-              lang="en"
-              class="project__description projectSlide"
-            ></p>
+            <p lang="en" class="project__description projectSlide"></p>
           </div>
           <a
             class="explore__link projectSlide"
@@ -360,7 +380,12 @@
             />
           </a>
         </div>
-        <a class="video__container" target="_blank" rel="noopener noreferrer" aria-label="Go to project">
+        <a
+          class="video__container"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Go to project"
+        >
           <img class="project__img" alt="project" />
           <video
             autoplay="autoplay"

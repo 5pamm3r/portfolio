@@ -9,6 +9,7 @@
       text-transform: uppercase;
       color: transparent;
       -webkit-text-stroke: 1.5px #735c73;
+      font-family: sans-serif;
       padding-left: var(--padding-left-right);
     }
     .faq-item__container {
@@ -68,8 +69,8 @@
             transition: height 0.3s 230ms;
             .active {
               opacity: 0;
-              animation: faqSlide 1s .3s;
-              transition: opacity 1s .3s; 
+              animation: faqSlide 1s 0.3s;
+              transition: opacity 1s 0.3s;
             }
           }
           div {
@@ -122,7 +123,6 @@
       }
       .faq-hid-act {
         font-size: var(--faq-text-mobile);
-        
       }
     }
   }

@@ -20,10 +20,6 @@
         font-size: var(--text-size);
         max-width: 600px;
         line-height: 1.3;
-        .topSlide {
-          opacity: 0;
-        }
-
         .subtitle {
           text-transform: uppercase;
           font-size: var(--subtitle);
@@ -44,37 +40,16 @@
           display: flex;
           margin: 10px 0;
         }
-        .skills-area {
-          font-size: var(--text-size);
-          .skillsList__container {
-            margin-top: 10px;
-            display: flex;
-            gap: 20px;
-            list-style: none;
-            & li {
-              transform: scale(1);
-              transition: transform 50ms 50ms;
-            }
-            & li:hover {
-              transform: scale(1.2) translateY(-10px);
-              transition: transform 60ms;
-            }
-            .skill__container {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              figcaption {
-                font-size: 1.3rem;
-              }
-            }
-            img {
-              width: 40px;
-            }
-          }
-        }
         @include send-email;
         .send-email {
           margin: 16px 0 0;
+        }
+        .shift-line {
+          @include shift-line;
+          .slide {
+            @include slide;
+            transform: translateY(150%);
+          }
         }
       }
       .img-profile {
@@ -109,43 +84,9 @@
       }
     }
   }
-  &.visible {
-    .text-area .topSlide {
-      &:nth-child(1) {
-        opacity: 1;
-        transition: opacity 0.5s 0.2s;
-        animation: slide 1s 0.2s;
-      }
-      &:nth-child(2) {
-        opacity: 1;
-        transition: opacity 0.5s 0.4s;
-        animation: slide 1s 0.4s;
-      }
-      &:nth-child(3) {
-        opacity: 1;
-        transition: opacity 0.5s 0.6s;
-        animation: slide 1s 0.6s;
-      }
-      &:nth-child(4) {
-        opacity: 1;
-        transition: opacity 0.5s 0.8s;
-        animation: slide 1s 0.8s;
-      }
-      &:nth-child(5) {
-        opacity: 1;
-        transition: opacity 0.5s 1s;
-        animation: slide 1s 1s;
-      }
-      &:nth-child(6) {
-        opacity: 1;
-        transition: opacity 0.5s 1.2s;
-        animation: slide 1s 1.2s;
-      }
-    }
-    .text-area .skills__subtitle.topSlide {
-      opacity: 1;
-      transition: opacity 0.5s 1.2s;
-      animation: slide 1s 1.2s;
+  &.visible .text-img__container .text-area {
+    .shift-line .slide {
+      transform: translateY(0%);
     }
   }
 }
@@ -172,21 +113,25 @@
         .grey-ellipse {
           display: none;
         }
-        .skills-area .skillsList__container {
-          justify-content: space-between;
-        }
       }
     }
   }
 }
-
+@include mqMax(1159px) {
+  .about .text-img__container .img-profile {
+    display: none;
+  }
+}
+@include mqMax(1024px) {
+  .about {
+    margin: 0;
+    height: auto;
+  }
+}
 @include mqMax(785px) {
   .about .text-img__container .text-area {
     padding: 0 20px;
     font-size: var(--text-size-tablet);
-    .skills-area {
-      font-size: var(--text-size-tablet);
-    }
   }
 }
 
@@ -194,31 +139,9 @@
   .about {
     overflow-x: hidden;
     .about__container .text-img__container {
-      .img-profile {
-        width: 250px;
-        .available-for-work {
-          width: 140px;
-          top: -40px;
-          right: -25px;
-        }
-      }
       .text-area {
         max-width: none;
         font-size: var(--text-size-mobile);
-        .skills-area {
-          font-size: var(--text-size-mobile);
-          .skillsList__container {
-            display: grid;
-            font-size: var(--text-size-mobile);
-            grid-template-columns: repeat(6, 1fr);
-            img {
-              width: 35px;
-            }
-            figcaption {
-              font-size: 1.2rem;
-            }
-          }
-        }
       }
     }
     .subtitle {

@@ -25,30 +25,22 @@
           font-size: 1.6rem;
           font-weight: 400;
         }
+        .shift-line {
+          @include shift-line;
+          .slide {
+            @include slide;
+          }
+        }
       }
       .shift-line {
-        overflow: hidden;
-        display: inline-flex;
-        width: 100%;
-        --line-number: var(--nth-child-idx);
+        @include shift-line;
         .home-subtitle {
           font-size: 3rem;
           font-weight: 600;
           line-height: 1.2;
         }
         .slide {
-          display: inline-block;
-          will-change: opacity, transform;
-          // --shift-delay: calc(
-          //   var(--shift-base-delay) * (var(--line-number) - 1)
-          // );
-          transition: transform var(--anim-duration)
-            cubic-bezier(0.19, 1, 0.22, 1);
-          transition-delay: calc(
-            var(--shift-base-delay) + var(--shift-delay) +
-              (var(--anim-duration) / 10) * (var(--line-number) - 1)
-          );
-          transform: translateY(103%);
+          @include slide;
         }
       }
     }
@@ -107,6 +99,11 @@
     .homeDescription__container .homeInfo__container .slide {
       transform: translateY(0%);
     }
+  }
+}
+@include mqMax(1024px) {
+  .home {
+    height: auto;
   }
 }
 

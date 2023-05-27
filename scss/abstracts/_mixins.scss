@@ -31,7 +31,25 @@
     @content;
   }
 }
-
+@mixin slide {
+  display: inline-block;
+  will-change: opacity, transform;
+  // --shift-delay: calc(
+  //   var(--shift-base-delay) * (var(--line-number) - 1)
+  // );
+  transition: transform var(--anim-duration) cubic-bezier(0.19, 1, 0.22, 1);
+  transition-delay: calc(
+    var(--shift-base-delay) + var(--shift-delay) + (var(--anim-duration) / 10) *
+      (var(--line-number) - 1)
+  );
+  transform: translateY(103%);
+}
+@mixin shift-line {
+  overflow: hidden;
+  display: inline-flex;
+  width: 100%;
+  --line-number: var(--nth-child-idx);
+}
 @mixin send-email {
   .send-email {
     position: relative;

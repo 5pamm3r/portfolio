@@ -28,17 +28,32 @@
         </h1>
         <div class="homeDescription__container">
           <div class="homeInfo__container">
-            <a class="link-contact" href="mailto:contact@cmassarino.dev">
-              <span class="email-contact">contact@cmassarino.dev</span>
+            <a
+              class="link-contact shift-line"
+              href="mailto:contact@cmassarino.dev"
+            >
+              <span
+                style="--shift-delay: calc(var(--shift-base-delay) * 1)"
+                class="email-contact slide"
+                >contact@cmassarino.dev</span
+              >
             </a>
             <div>
               <div class="shift-line">
-                <span class="home-subtitle slide">/Frontend Developer</span>
+                <span
+                  style="--shift-delay: calc(var(--shift-base-delay) * 2)"
+                  class="home-subtitle slide"
+                  >/Frontend Developer</span
+                >
               </div>
             </div>
             <div>
               <div class="shift-line">
-                <span class="home-subtitle slide">/UX-UI Designer</span>
+                <span
+                  style="--shift-delay: calc(var(--shift-base-delay) * 3)"
+                  class="home-subtitle slide"
+                  >/UX-UI Designer</span
+                >
               </div>
             </div>
           </div>
@@ -84,25 +99,58 @@
         <div class="about__container">
           <div class="text-img__container">
             <div class="text-area" id="textArea">
-              <p lang="en" class="subtitle topSlide">
-                A little about me <span aria-hidden="true">👋</span>
-              </p>
-              <p lang="en" class="about__title topSlide">Who am I</p>
-              <p lang="en" class="topSlide text">
-                I am a Frontend Developer focused on improving the performance
-                and user experience in my web applications. I am a self-taught
-                person willing to learn and face new challenges that allow me to
-                acquire new tools to enhance my work.
-              </p>
-              <p lang="en" class="topSlide text">
-                I specialize in creating accessible and user-friendly interfaces
-                using technologies such as JavaScript, TypeScript, React,
-                Next.js, <abbr lang="en" title="Accesibility">A11y</abbr>, and
-                Node.js.
-              </p>
-              <p lang="en" class="topSlide text">
-                I write code and improve my design and English skills every day.
-              </p>
+              <div class="shift-line">
+                <p
+                  lang="en"
+                  class="subtitle slide"
+                  style="--shift-delay: calc(var(--shift-base-delay) * 1)"
+                >
+                  A little about me <span aria-hidden="true">👋</span>
+                </p>
+              </div>
+              <div class="shift-line">
+                <p
+                  style="--shift-delay: calc(var(--shift-base-delay) * 2)"
+                  lang="en"
+                  class="about__title slide"
+                >
+                  Who am I
+                </p>
+              </div>
+              <div class="shift-line">
+                <p
+                  lang="en"
+                  class="slide text"
+                  style="--shift-delay: calc(var(--shift-base-delay) * 3)"
+                >
+                  I am a Frontend Developer focused on improving the performance
+                  and user experience in my web applications. I am a self-taught
+                  person willing to learn and face new challenges that allow me
+                  to acquire new tools to enhance my work.
+                </p>
+              </div>
+              <div class="shift-line">
+                <p
+                  lang="en"
+                  class="slide text"
+                  style="--shift-delay: calc(var(--shift-base-delay) * 4)"
+                >
+                  I specialize in creating accessible and user-friendly
+                  interfaces using technologies such as JavaScript, TypeScript,
+                  React, Next.js,
+                  <abbr lang="en" title="Accesibility">A11y</abbr>, and Node.js.
+                </p>
+              </div>
+              <div class="shift-line">
+                <p
+                  lang="en"
+                  class="slide text"
+                  style="--shift-delay: calc(var(--shift-base-delay) * 5)"
+                >
+                  I write code and improve my design and English skills every
+                  day.
+                </p>
+              </div>
               <a
                 href="mailto:cmassarino.dev@gmail.com"
                 class="send-email notranslate"
@@ -369,26 +417,52 @@
     <template id="templateProjects">
       <li class="project__container">
         <div class="projectDescription__container">
-          <h2 class="project-tag projectSlide">PROJECT</h2>
+          <div class="shift-line">
+            <h2
+              class="project-tag slide"
+              style="--shift-delay: calc(var(--shift-base-delay) * 1)"
+            >
+              PROJECT
+            </h2>
+          </div>
           <div class="projectInfo__container">
-            <h2 class="project__title projectSlide notranslate"></h2>
-            <h2 class="project__subtitle notranslate projectSlide"></h2>
+            <div class="shift-line">
+              <h2
+                class="project__title slide notranslate"
+                style="--shift-delay: calc(var(--shift-base-delay) * 2)"
+              ></h2>
+            </div>
+            <div class="shift-line">
+              <h2
+                class="project__subtitle notranslate slide"
+                style="--shift-delay: calc(var(--shift-base-delay) * 3)"
+              ></h2>
+            </div>
           </div>
-          <div class="description__container">
-            <p lang="en" class="project__description projectSlide"></p>
+          <div class="description__container shift-line">
+            <p
+              lang="en"
+              class="project__description slide"
+              style="--shift-delay: calc(var(--shift-base-delay) * 4)"
+            ></p>
           </div>
-          <a
-            class="explore__link projectSlide"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Go to project"
-          >
-            <span class="explore">EXPLORE <span class="offscreen"></span></span>
-            <img
-              src="https://5pamm3r.github.io/portfolio/public/assets/icons/right-arrow.png"
-              alt=""
-            />
-          </a>
+          <div class="shift-line">
+            <a
+              class="explore__link slide"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Go to project"
+              style="--shift-delay: calc(var(--shift-base-delay) * 5)"
+            >
+              <span class="explore"
+                >EXPLORE <span class="offscreen"></span
+              ></span>
+              <img
+                src="https://5pamm3r.github.io/portfolio/public/assets/icons/right-arrow.png"
+                alt=""
+              />
+            </a>
+          </div>
         </div>
         <a
           class="video__container"
@@ -411,6 +485,5 @@
       </li>
     </template>
     <script src="src/index.js" type="module"></script>
-    <script src="src/skillsList.js" type="module"></script>
   </body>
 </html>

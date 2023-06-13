@@ -60,12 +60,25 @@ const getProject = (() => {
   project.append(fragmentProject);
 })();
 
-const hours = new Date().toLocaleTimeString("en-US", {
-  hour: "numeric",
-  hour12: true,
-  minute: "2-digit",
-});
-document.getElementById("country").textContent += ` ${hours}.`;
+const renderLocalTime = (hour) => {
+  document.getElementById("local-time").innerHTML = ` ${hour}.`;
+};
+(function () {
+  const hour = new Date().toLocaleTimeString("en-US", {
+    hour: "numeric",
+    hour12: true,
+    minute: "2-digit",
+  });
+  renderLocalTime(hour);
+  setInterval(() => {
+    const updatedHour = new Date().toLocaleTimeString("en-US", {
+      hour: "numeric",
+      hour12: true,
+      minute: "2-digit",
+    });
+    renderLocalTime(updatedHour);
+  }, 60000);
+})();
 
 getContact("#footerContact");
 topSlide();

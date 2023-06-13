@@ -92,14 +92,19 @@
       left: -7%;
       bottom: -30px;
     }
-    &.visible .projectDescription__container .shift-line .slide {
-      transform: translateY(0%);
+    &.visible .projectDescription__container .shift-line {
+      .slide {
+        transform: translateY(0%);
+      }
+      .explore__link.link {
+        display: flex;
+      }
     }
   }
 }
 
 @include mqMax(900px) {
-  .projects .project__container {
+  .projects .project__container.visible {
     flex-direction: column;
     .projectDescription__container {
       width: 100%;
@@ -120,7 +125,7 @@
           font-size: var(--text-size-xl);
         }
       }
-      .explore__link {
+      .shift-line .explore__link.link {
         display: none;
       }
     }

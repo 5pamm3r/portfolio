@@ -49,7 +49,7 @@ $h-hide-distance: $h-width + $h-padding;
   --slide-ms-idx-4: 0.8s;
   --slide-ms-idx-5: 1s;
   --slide-ms-idx-6: 1.2s;
-
+  --font-family: "Graphik", sans-serif;
   --shift-base-delay: 140ms;
   --shift-delay: var(--shift-base-delay);
   --anim-duration: calc(var(--shift-base-delay) * 10);
@@ -91,7 +91,6 @@ $h-hide-distance: $h-width + $h-padding;
 html {
   background-color: white;
   font-size: 62.5%;
-  // font-family: "Mulish", sans-serif;
   font-family: "Graphik", sans-serif;
 }
 body {

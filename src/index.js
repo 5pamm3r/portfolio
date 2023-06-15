@@ -32,6 +32,14 @@ const getContact = (id) => {
 const getProject = (() => {
   const project = document.querySelector("#projects");
   projects(
+    "Food Truck Delivery",
+    "Next.js, UX/UI Design",
+    "Looking for an efficient and cost-effective way to manage your orders? This application, designed specifically for food delivery businesses, provides you with a powerful and easy-to-use platform to display your menu and take orders.",
+    "../public/assets/images/icon-384x384.png",
+    "../public/assets/videos/food-truck.mp4",
+    "https://food-truck-demo.vercel.app/"
+  );
+  projects(
     "Expense tracker",
     "React, UX/UI Design",
     "Do you feel that money flies? To optimize expenses, it is important to know what is spent on. There is only one way to do it and that is to keep track of expenses.",

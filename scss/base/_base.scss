@@ -13,6 +13,11 @@ $h-initial-opposition: 5px;
 $h-hide-distance: $h-width + $h-padding;
 
 :root {
+  //new
+  --font-title-mobile: 5.5rem;
+  // --project-title-mobile:
+  --text-mobile: 1.7rem;
+
   --backgroundColor: #1f1d36;
   --padding-left-right: calc((100vw + 80px) / 21);
   --title-xl: 10rem;
@@ -23,7 +28,7 @@ $h-hide-distance: $h-width + $h-padding;
   --subtitle-mobile: 2.5rem;
   --subtitle: 1.5rem;
   --text-size: 2.2rem;
-  --text-size-xl: 2.3rem;
+  --text-size-xl: 2rem;
   --text-size-tablet: 2.1rem;
   --text-size-mobile: 1.8rem;
   --text-size-mobile-M: 1.5rem;

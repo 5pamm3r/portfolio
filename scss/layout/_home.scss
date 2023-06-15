@@ -93,7 +93,7 @@
     display: block;
     height: 5px;
     background-color: #111;
-    margin-top: 80px;
+    margin: 80px 0;
   }
   &.visible {
     .homeDescription__container .homeInfo__container .slide {
@@ -115,23 +115,20 @@
     .home__title {
       font-size: 7rem;
     }
-    .homeDescription__container {
-      .homeInfo__container {
-      }
-    }
   }
 }
 
-@include mqMax(550px) {
+@include mqMax(700px) {
   .home {
+    padding-top: 100px;
     a {
       text-decoration: underline;
     }
     .home__title {
-      font-size: 55px;
+      font-size: var(--font-title-mobile);
     }
     .homeDescription__container {
-      flex-direction: column;
+      flex-direction: row;
       gap: 20px;
       .homeInfo__container {
         .shift-line .home-subtitle {
@@ -144,9 +141,24 @@
           font-size: 1.5rem;
         }
         .home__contact {
-          display: none;
+          display: block;
+          .social-link:not(:last-child) {
+            margin-right: 10px;
+          }
         }
       }
+    }
+    &::after {
+      margin: 50px 0;
+    }
+  }
+}
+
+@include mqMax(560px) {
+  .home .homeDescription__container {
+    flex-direction: column;
+    .homeContact__container .home__contact {
+      display: none;
     }
   }
 }

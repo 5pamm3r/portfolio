@@ -13,11 +13,11 @@
     }
     .faq-item__container {
       transition: height 2s 2s;
-      margin: 0 auto;
+      margin: 100px auto 0;
       width: 80%;
       .faq-item {
         margin: 20px 0;
-        padding: 20px 0;
+        padding: 20px 20px;
         border-bottom: 1px solid gray;
         .faq-title__container {
           display: flex;
@@ -28,14 +28,14 @@
             .faq-icon {
               width: 30px;
               height: 5px;
-              background-color: red;
+              background-color: var(--red);
             }
             .faq-icon2 {
               position: absolute;
               top: 0;
               width: 30px;
               height: 5px;
-              background-color: red;
+              background-color: var(--red);
               transition: transform 0.5s;
               transform: rotate(0deg);
             }
@@ -121,7 +121,8 @@
         font-size: var(--faq-question-mobile);
       }
       .faq-hid-act {
-        font-size: var(--faq-text-mobile);
+        font-size: var(--small-text-mobile);
+        padding-top: 20px;
       }
     }
   }

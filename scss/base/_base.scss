@@ -15,8 +15,11 @@ $h-hide-distance: $h-width + $h-padding;
 :root {
   //new
   --font-title-mobile: 5.5rem;
-  // --project-title-mobile:
+  --small-title-mobile: 3rem;
   --text-mobile: 1.7rem;
+  --faq-question: 2.5rem;
+  //cambiar faq por small en todas.
+  --small-text-mobile: 1.4rem;
 
   --backgroundColor: #1f1d36;
   --padding-left-right: calc((100vw + 80px) / 21);
@@ -36,14 +39,12 @@ $h-hide-distance: $h-width + $h-padding;
   --title-project-mobile: 3rem;
   --subtitle-project: 1.8rem;
   --text-project: 1.8rem;
-  --faq-title: 7rem;
-  --faq-question: 3rem;
+  --faq-title: 8rem;
   --faq-text: 1.5rem;
   --faq-title-mobile: 5rem;
   --faq-title-mobile-M: 4.5rem;
   --faq-question-mobile: 2.3rem;
   --faq-question-mobile-M: 2.1rem;
-  --faq-text-mobile: 1.3rem;
 
   --footer-subtitle: 6rem;
   --footer-subtitle-mobile: 4rem;

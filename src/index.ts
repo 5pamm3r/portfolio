@@ -2,8 +2,8 @@ import { projects, fragmentProject } from "./projects.js";
 import { styles } from "./styles.js";
 import { topSlide } from "./animations.js";
 
-const getProject = (() => {
-  const project = document.querySelector("#projects");
+const getProject: void = (() => {
+  const project: HTMLElement | null = document.querySelector("#projects");
   projects(
     "Aerolab-Challenge",
     "Challenge, React, TypeScript",
@@ -44,11 +44,11 @@ const getProject = (() => {
     "https://5pamm3r.github.io/portfolio/public/assets/videos/video-wishlist.mp4",
     "https://5pamm3r.github.io/wish-list"
   );
-  project.append(fragmentProject);
+  project?.append(fragmentProject);
 })();
 
-const renderLocalTime = (hour) => {
-  document.getElementById("local-time").innerHTML = ` ${hour}.`;
+const renderLocalTime = (hour: string) => {
+  document.getElementById("local-time")!.innerHTML = ` ${hour}.`;
 };
 (function () {
   const hour = new Date().toLocaleTimeString("en-US", {

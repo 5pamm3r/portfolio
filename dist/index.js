@@ -1,6 +1,6 @@
-import { projects, fragmentProject } from "./projects";
-import { styles } from "./styles";
-import { topSlide } from "./animations";
+import { projects, fragmentProject } from "./projects.js";
+import { styles } from "./styles.js";
+import { topSlide } from "./animations.js";
 const getProject = (() => {
     const project = document.querySelector("#projects");
     projects("Aerolab-Challenge", "Challenge, React, TypeScript", "The coding challenge consists of interacting with an e-commerce API, where users have points that they can spend to redeem products.", "../public/assets/icons/aerolab-logo.svg", "../public/assets/videos/aerolab-challenge.mp4", "https://aerolab-challenge-5pamm3r.vercel.app/");

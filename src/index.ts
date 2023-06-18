@@ -1,6 +1,6 @@
-import { projects, fragmentProject } from "./projects.js";
-import { styles } from "./styles.js";
-import { topSlide } from "./animations.js";
+import { projects, fragmentProject } from "./projects";
+import { styles } from "./styles";
+import { topSlide } from "./animations";
 
 const getProject: void = (() => {
   const project: HTMLElement | null = document.querySelector("#projects");

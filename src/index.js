@@ -1,36 +1,17 @@
-import { contactContainer, fragment } from "./contact.js";
 import { projects, fragmentProject } from "./projects.js";
 import { styles } from "./styles.js";
 import { topSlide } from "./animations.js";
 
-const getContact = (id) => {
-  const contact = document.querySelector(id);
-  contactContainer(
-    "linkedInContact",
-    "https://www.linkedin.com/in/carlos-massarino-9970b1234/",
-    "https://5pamm3r.github.io/portfolio/public/assets/icons/linkedin-black.svg",
-    "LinkedIn",
-    "Go to LinkedIn"
-  );
-  contactContainer(
-    "twitterContact",
-    "https://twitter.com/C_Massarino",
-    "https://5pamm3r.github.io/portfolio/public/assets/icons/twitter-black.svg",
-    "Twitter",
-    "Go to Twitter"
-  );
-  contactContainer(
-    "githubContact",
-    "https://github.com/5pamm3r",
-    "https://5pamm3r.github.io/portfolio/public/assets/icons/github.png",
-    "GitHub",
-    "Go to GitHub"
-  );
-  contact.append(fragment);
-};
-
 const getProject = (() => {
   const project = document.querySelector("#projects");
+  projects(
+    "Aerolab-Challenge",
+    "Challenge, React, TypeScript",
+    "The coding challenge consists of interacting with an e-commerce API, where users have points that they can spend to redeem products.",
+    "../public/assets/icons/aerolab-logo.svg",
+    "../public/assets/videos/aerolab-challenge.mp4",
+    "https://aerolab-challenge-5pamm3r.vercel.app/"
+  );
   projects(
     "Food Truck Delivery",
     "Next.js, UX/UI Design",
@@ -53,8 +34,7 @@ const getProject = (() => {
     "Are you worried about the weather? In this app you will find basic information such as the current weather situation, as well as the forecast for days or hours.",
     "https://5pamm3r.github.io/portfolio/public/assets/images/umbrella.png",
     "https://5pamm3r.github.io/portfolio/public/assets/videos/umbrella-video.mp4",
-    "https://5pamm3r.github.io/umbrella/",
-    "id2"
+    "https://5pamm3r.github.io/umbrella/"
   );
   projects(
     "Wish List",
@@ -62,8 +42,7 @@ const getProject = (() => {
     "Organize effectively and say goodbye to stress. Plan, manage and control all your tasks in an application that will improve your efficiency at work and in your personal life.",
     "https://5pamm3r.github.io/portfolio/public/assets/images/featherPens.png",
     "https://5pamm3r.github.io/portfolio/public/assets/videos/video-wishlist.mp4",
-    "https://5pamm3r.github.io/wish-list",
-    "id3"
+    "https://5pamm3r.github.io/wish-list"
   );
   project.append(fragmentProject);
 })();
@@ -88,6 +67,5 @@ const renderLocalTime = (hour) => {
   }, 60000);
 })();
 
-getContact("#footerContact");
 topSlide();
 styles();

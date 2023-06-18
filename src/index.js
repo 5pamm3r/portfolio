@@ -24,7 +24,7 @@ const getProject = (() => {
     "Expense tracker",
     "React, UX/UI Design",
     "Do you feel that money flies? To optimize expenses, it is important to know what is spent on. There is only one way to do it and that is to keep track of expenses.",
-    "https://5pamm3r.github.io/portfolio/public/assets/images/cryptoWallet.png",
+    "https://5pamm3r.github.io/portfolio/public/assets/images/cryptoWallet.webp",
     "https://5pamm3r.github.io/portfolio/public/assets/videos/expenseTracker-video.mp4",
     "https://5pamm3r.github.io/expense-tracker"
   );

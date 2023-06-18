@@ -1,8 +1,10 @@
 {
   "scripts": {
-    "start": "live-server"
+    "start": "live-server",
+    "build": "tsc"
   },
   "devDependencies": {
-    "live-server": "^1.1.0"
+    "live-server": "^1.1.0",
+    "typescript": "^5.1.3"
   }
 }

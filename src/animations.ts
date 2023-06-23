@@ -1,4 +1,4 @@
-function topSlide() {
+((): void => {
   const home: HTMLElement | null = document.getElementById("home");
   const projects: NodeListOf<Element> = document.querySelectorAll(".project__container");
 
@@ -14,5 +14,4 @@ function topSlide() {
     observer.observe(home);
   }
   projects.forEach((item: Element) => observer.observe(item));
-}
-export { topSlide };
+})();

@@ -1,4 +1,5 @@
-function topSlide() {
+"use strict";
+(() => {
     const home = document.getElementById("home");
     const projects = document.querySelectorAll(".project__container");
     const observer = new IntersectionObserver((entries) => {
@@ -12,5 +13,4 @@ function topSlide() {
         observer.observe(home);
     }
     projects.forEach((item) => observer.observe(item));
-}
-export { topSlide };
+})();

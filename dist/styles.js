@@ -1,4 +1,5 @@
-function styles() {
+"use strict";
+(() => {
     var _a, _b, _c;
     const toggleAccordion = (accordionId, hiddenItemId, iconId, sectionId) => {
         const accordion = document.getElementById(accordionId);
@@ -44,5 +45,4 @@ function styles() {
     (_c = document.getElementById("faq-accordion3")) === null || _c === void 0 ? void 0 : _c.addEventListener("click", () => {
         toggleAccordion("faq-accordion3", "faqHidden-item3", "faqIcon3", "sect3");
     });
-}
-export { styles };
+})();

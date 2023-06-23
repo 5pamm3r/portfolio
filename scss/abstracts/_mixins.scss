@@ -46,7 +46,7 @@
 }
 @mixin shift-line {
   overflow: hidden;
-  display: inline-flex;
+  // display: inline-flex;
   width: 100%;
   --line-number: var(--nth-child-idx);
 }

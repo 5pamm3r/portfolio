@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "start": "live-server"
+    "start": "live-server",
+    "build": "tsc --watch"
+
   },
   "devDependencies": {
     "live-server": "^1.1.0",

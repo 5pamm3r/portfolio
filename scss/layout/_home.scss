@@ -71,21 +71,15 @@
 
 @include mqMax(900px) {
   .home {
-    a {
-      text-decoration: underline;
-    }
     .home__title {
       font-size: 7rem;
     }
   }
 }
 
-@include mqMax(700px) {
+@include mqMax(750px) {
   .home {
     padding-top: 100px;
-    a {
-      text-decoration: underline;
-    }
     .home__title {
       font-size: var(--font-title-mobile);
     }
@@ -93,6 +87,9 @@
       flex-direction: row;
       gap: 20px;
       .homeInfo__container {
+        .link-contact span {
+          text-decoration: underline;
+        }
         .shift-line .home-subtitle {
           font-size: 2rem;
           line-height: 1.5;

@@ -1,7 +1,21 @@
 import { projects, fragmentProject } from "./projects.js";
 
+// window.addEventListener('load', function () {
+//   var loading = document.getElementById('loading');
+//   if (loading) {
+//     loading.style.display = 'none';
+//   }
+// });
 const getProject: void = (() => {
   const project: HTMLElement | null = document.querySelector("#projects");
+  projects(
+    "Food Swipe",
+    "Under construction, Next.js 13",
+    "Swipe left to discard or right to save your favorite recipes from renowned chefs around the world.",
+    "https://cmassarino.dev/public/assets/images/food-swipe.webp",
+    "https://cmassarino.dev/public/assets/videos/food-swipe.mp4",
+    "https://food-swipe.vercel.app/"
+  );
   projects(
     "Multi Step Form",
     "Frontend Mentor, A11Y, React",
@@ -14,7 +28,7 @@ const getProject: void = (() => {
     "Aerolab Challenge",
     "Challenge, React",
     "The coding challenge consists of interacting with an e-commerce API, where users have points that they can spend to redeem products.",
-    "https://cmassarino.dev/public/assets/images/aerolab.webp",
+    "https://cmassarino.dev/public/assets/images/credit-card.webp",
     "https://cmassarino.dev/public/assets/videos/aerolab-challenge.mp4",
     "https://aerolab-challenge-5pamm3r.vercel.app/"
   );
@@ -72,3 +86,4 @@ const renderLocalTime = (hour: string) => {
     renderLocalTime(updatedHour);
   }, 60000);
 })();
+
